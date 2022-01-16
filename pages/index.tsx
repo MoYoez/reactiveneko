@@ -4,7 +4,7 @@ import {
     FaCompactDisc,
     FaExternalLinkAlt,
     FaGithub,
-    Famusic,
+    FaMusic,
     FaSteam,
     Faqq,
     FaTwitter,
