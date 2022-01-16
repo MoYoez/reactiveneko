@@ -6,7 +6,7 @@ import {
     FaGithub,
     FaMusic,
     FaSteam,
-    Faqq,
+    FaQq,
     FaTwitter,
 } from 'react-icons/fa'
 import { IoBulb, IoCloud, IoGitBranch, IoLanguage, IoLink, IoSchool } from 'react-icons/io5'
@@ -82,10 +82,10 @@ const IndexPage = ({ initialSteamPersonaName, steamPersonaNameUrl }: PropsWithCh
                     </Account>
                 </AccountList>
                 <AccountList title="social network">
-                    <Account href="https://music.163.com/#/user/home?id=555696683" icon={Famusic}  title="netease">
+                    <Account href="https://music.163.com/#/user/home?id=555696683" icon={FaMusic}  title="netease">
                         MoeMagicMango
                     </Account>
-                    <Account href="https://wpa.qq.com/msgrd?v=3&uin=1292581422&site=qq&menu=yes" icon={Faqq} title="QQ">
+                    <Account href="https://wpa.qq.com/msgrd?v=3&uin=1292581422&site=qq&menu=yes" icon={FaQq} title="QQ">
                         Lemon Flavours
                     </Account>
                     <Account href="https://twitter.com/lemonflavours" icon={FaTwitter} title="Twitter">
