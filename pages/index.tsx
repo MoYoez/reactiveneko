@@ -4,11 +4,10 @@ import {
     FaCompactDisc,
     FaExternalLinkAlt,
     FaGithub,
-    FaGooglePlusG,
+    Famusic,
     FaSteam,
-    FaTelegramPlane,
+    Faqq,
     FaTwitter,
-    FaWeibo,
 } from 'react-icons/fa'
 import { IoBulb, IoCloud, IoGitBranch, IoLanguage, IoLink, IoSchool } from 'react-icons/io5'
 import { Account, AccountList, Description, Paragraph } from '../components/blocks'
@@ -50,23 +49,13 @@ const IndexPage = ({ initialSteamPersonaName, steamPersonaNameUrl }: PropsWithCh
         <Header
             profileName={
                 <>
-                    amphi
-                    <ProfileNameStandout
-                        backgroundColor="hsla(0, 100%, 82%, 0.25)"
-                        href="https://en.wikipedia.org/wiki/Neon"
-                        hoverRuby="ね"
-                        hoverColor="hsla(0, 100%, 82%, 0.75)"
-                        ruby="10"
-                    >
-                        ne
-                    </ProfileNameStandout>
-                    ko
-                </>
+                    MoeMagicMango
+                
             }
         >
             <div>
-                <LabelGroup icon={IoLink} title="a.k.a.">
-                    <LabelItem>atomic::akarin</LabelItem>
+                <LabelGroup icon={IoLink} title="Blog">
+                    <LabelItem><a href="https://imagic.run"></a></LabelItem>
                 </LabelGroup>
             </div>
             <div>
@@ -76,29 +65,7 @@ const IndexPage = ({ initialSteamPersonaName, steamPersonaNameUrl }: PropsWithCh
                     <LabelItem>English</LabelItem>
                 </LabelGroup>
                 <LabelGroup icon={IoSchool} title="status">
-                    <LabelItem>M.Sc. in progress</LabelItem>
-                </LabelGroup>
-                <LabelGroup icon={IoCloud} title="aut-num">
-                    <LabelItem>
-                        <a
-                            className="silent-link"
-                            href="https://www.peeringdb.com/net/15170"
-                            rel="noreferrer"
-                            target="_blank"
-                        >
-                            205058
-                        </a>
-                    </LabelItem>
-                    <LabelItem>
-                        <a
-                            className="silent-link"
-                            href="https://www.peeringdb.com/net/24185"
-                            rel="noreferrer"
-                            target="_blank"
-                        >
-                            38023
-                        </a>
-                    </LabelItem>
+                    <LabelItem>Just a student:D</LabelItem>
                 </LabelGroup>
             </div>
         </Header>
@@ -107,29 +74,31 @@ const IndexPage = ({ initialSteamPersonaName, steamPersonaNameUrl }: PropsWithCh
             <Column>
                 <Description>
                     {/* <Paragraph>who is amphineko?</Paragraph> */}
-                    <Paragraph>Passionate full-stack software developer and open-source contributor.</Paragraph>
-                    <Paragraph>Amautar network engineer operating own Internet autonomous systems.</Paragraph>
-                    <Paragraph>Contact me if you&apos;re interested to hire me :D</Paragraph>
+                    <Paragraph>心之所向，素履以往</Paragraph>
+                    <Paragraph>Ciallo～(∠・ω< )⌒★</Paragraph>
+                    <Paragraph>你好吖，这边是夹子</Paragraph>
+                    <Paragraph>一名学生，没有什么特别引入注意的地方 喜欢折腾一些喜欢的东西，或者尝试一些新的爱好w</Paragraph>
+                     <Paragraph>如果需要更多信息， 可以往下翻翻惹</Paragraph>
                 </Description>
             </Column>
             <Column>
                 <AccountList title="open-source">
-                    <Account href="https://github.com/amphineko/" icon={FaGithub} title="GitHub">
-                        amphineko
+                    <Account href="https://github.com/moyoez/" icon={FaGithub} title="GitHub">
+                        MoYoez
                     </Account>
                 </AccountList>
                 <AccountList title="social network">
-                    <Account href="#" icon={FaGooglePlusG} strikethrough title="Google+">
-                        [unavailable]
+                    <Account href="https://music.163.com/#/user/home?id=555696683" icon={Famusic}  title="netease">
+                        MoeMagicMango
                     </Account>
-                    <Account href="https://telegram.me/amphineko" icon={FaTelegramPlane} title="Telegram">
+                    <Account href="https://wpa.qq.com/msgrd?v=3&uin=1292581422&site=qq&menu=yes" icon={Faqq} title="QQ">
+                        Lemon Flavours
+                    </Account>
+                    <Account href="https://twitter.com/lemonflavours" icon={FaTwitter} title="Twitter">
                         @amphineko
                     </Account>
-                    <Account href="https://twitter.com/amphineko/" icon={FaTwitter} title="Twitter">
-                        @amphineko
-                    </Account>
-                    <Account href="#" icon={FaWeibo} strikethrough title="Weibo">
-                        [redacted]
+                    <Account href="i@himoyo.cn" icon={FaWeibo}  title="mail">
+                        I#HiMoYo.cn
                     </Account>
                 </AccountList>
             </Column>
@@ -140,23 +109,23 @@ const IndexPage = ({ initialSteamPersonaName, steamPersonaNameUrl }: PropsWithCh
                 <Description>
                     {/* <Paragraph>who is amphineko?</Paragraph> */}
                     <Paragraph>
-                        ardently love fps, simulation and galgames
+                        偏爱于一些独立游戏w
                         <br />
-                        rhythm game is LIFE!
+                        同时也是个音游玩家
                         <br />
-                        ingress (mission collection only) agent
+                        (*/ω＼*)
                     </Paragraph>
                     <Paragraph>
-                        <del className="deleted">dream to be a civil aviation pilot</del>
+                        <del className="deleted">或许?你可以看到我熬夜玩原神.jpg</del>
                     </Paragraph>
                 </Description>
             </Column>
             <Column>
                 <AccountList title="profiles">
-                    <Account href="https://osu.ppy.sh/users/1344051" icon={FaCompactDisc} title="osu!">
-                        Rukatan
+                    <Account href="https://osu.ppy.sh/users/14730537" icon={FaCompactDisc} title="osu!">
+                        MoYoez
                     </Account>
-                    <Account href="https://steamcommunity.com/id/amphineko/" icon={FaSteam} title="Steam">
+                    <Account href="https://steamcommunity.com/id/akirasweetz/" icon={FaSteam} title="Steam">
                         <UpdatedUsername
                             fn={() => fetchSteamPersonaName(steamPersonaNameUrl)}
                             initialData={initialSteamPersonaName}
@@ -177,7 +146,7 @@ const IndexPage = ({ initialSteamPersonaName, steamPersonaNameUrl }: PropsWithCh
                 </span>
             </FooterParagraph>
             <FooterParagraph icon={IoBulb}>
-                Copyright © 2015-2022 amphineko. Illustrations have their own licenses.
+                Copyright © 2021-2022 HiMoYo.
             </FooterParagraph>
         </Footer>
 
@@ -217,7 +186,7 @@ const IndexPage = ({ initialSteamPersonaName, steamPersonaNameUrl }: PropsWithCh
 
         <style jsx global>{`
             body {
-                background: url('${Background}') no-repeat;
+                background: url('https://cdn.jsdelivr.net/gh/VincentSHI1230/BTPanel-beautification@master/background/NekohaShizuku1.jpg') no-repeat;
                 background-color: #aaa;
                 background-size: cover;
                 font-family: 'Helvetica Neue', Helvetica, Arial, 'PingFangTC-Light', 'Microsoft YaHei', '微软雅黑',
