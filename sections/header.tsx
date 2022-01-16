@@ -1,7 +1,7 @@
 import { PropsWithChildren, ReactNode } from 'react'
-import HeadPictureOriginal from '../public/assets/images/amphineko.png'
-import HeadPicture from '../public/assets/images/amphineko.png?resize'
-import HeadPictureWebP from '../public/assets/images/amphineko.png?webp'
+import HeadPictureOriginal from 'https://cravatar.cn/avatar/22b242a28bb848f2629f2a636bba9c03?s=400'
+import HeadPicture from 'https://cravatar.cn/avatar/22b242a28bb848f2629f2a636bba9c03?s=400'
+import HeadPictureWebP from 'https://cravatar.cn/avatar/22b242a28bb848f2629f2a636bba9c03?s=400'
 
 export const ProfileNameStandout = ({
     backgroundColor,
