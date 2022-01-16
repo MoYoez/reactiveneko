@@ -12,7 +12,6 @@ import {
 import { IoBulb, IoCloud, IoGitBranch, IoLanguage, IoLink, IoSchool } from 'react-icons/io5'
 import { Account, AccountList, Description, Paragraph } from '../components/blocks'
 import { LabelGroup, LabelItem } from '../components/labels'
-import { UpdatedUsername } from '../components/username'
 import BackgroundHeader from '../public/assets/images/background-header.svg'
 import Background from '../public/assets/images/background.svg'
 import { Block, Column } from '../sections/block'
@@ -47,12 +46,7 @@ const fetchSteamPersonaName = async (url: string) => {
 const IndexPage = ({ initialSteamPersonaName, steamPersonaNameUrl }: PropsWithChildren<IndexPageProps>) => (
     <div className="container">
         <Header
-            profileName={
-                <>
-                    MoeMagicMango
-                
-            }
-        >
+            profileName="MoeMagicMango"
             <div>
                 <LabelGroup icon={IoLink} title="Blog">
                     <LabelItem><a href="https://imagic.run"></a></LabelItem>
@@ -123,14 +117,10 @@ const IndexPage = ({ initialSteamPersonaName, steamPersonaNameUrl }: PropsWithCh
             <Column>
                 <AccountList title="profiles">
                     <Account href="https://osu.ppy.sh/users/14730537" icon={FaCompactDisc} title="osu!">
-                        MoYoez
+                   MoYoez
                     </Account>
                     <Account href="https://steamcommunity.com/id/akirasweetz/" icon={FaSteam} title="Steam">
-                        <UpdatedUsername
-                            fn={() => fetchSteamPersonaName(steamPersonaNameUrl)}
-                            initialData={initialSteamPersonaName}
-                            queryKey="steam-persona-name"
-                        />
+                    MoeMagicMango
                     </Account>
                 </AccountList>
             </Column>
