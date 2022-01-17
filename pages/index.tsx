@@ -46,9 +46,7 @@ const fetchSteamPersonaName = async (url: string) => {
 
 const IndexPage = ({ initialSteamPersonaName, steamPersonaNameUrl }: PropsWithChildren<IndexPageProps>) => (
     <div className="container">
-        <Header
-            profileName="MoeMagicMango"
-        >
+        <Header profileName="MoeMagicMango">
             <div>
                 <a href="https://imagic.run">
                     <LabelGroup icon={IoLink} title="Blog"></LabelGroup>
@@ -73,7 +71,9 @@ const IndexPage = ({ initialSteamPersonaName, steamPersonaNameUrl }: PropsWithCh
                     <Paragraph>心之所向，素履以往</Paragraph>
                     <Paragraph>Ciallo～(∠・ω&lt; )⌒★</Paragraph>
                     <Paragraph>你好吖，这边是夹子</Paragraph>
-                    <Paragraph>一名学生，没有什么特别引入注意的地方 喜欢折腾一些喜欢的东西，或者尝试一些新的爱好w</Paragraph>
+                    <Paragraph>
+                        一名学生，没有什么特别引入注意的地方 喜欢折腾一些喜欢的东西，或者尝试一些新的爱好w
+                    </Paragraph>
                     <Paragraph>如果需要更多信息， 可以往下翻翻惹</Paragraph>
                 </Description>
             </Column>
@@ -137,9 +137,7 @@ const IndexPage = ({ initialSteamPersonaName, steamPersonaNameUrl }: PropsWithCh
                     <FaExternalLinkAlt />
                 </span>
             </FooterParagraph>
-            <FooterParagraph icon={IoBulb}>
-                Copyright © 2021-2022 HiMoYo.
-            </FooterParagraph>
+            <FooterParagraph icon={IoBulb}>Copyright © 2021-2022 HiMoYo.</FooterParagraph>
         </Footer>
 
         <style jsx>{`
@@ -178,7 +176,8 @@ const IndexPage = ({ initialSteamPersonaName, steamPersonaNameUrl }: PropsWithCh
 
         <style jsx global>{`
             body {
-                background: url('https://cdn.jsdelivr.net/gh/VincentSHI1230/BTPanel-beautification@master/background/NekohaShizuku1.jpg') no-repeat;
+                background: url('https://cdn.jsdelivr.net/gh/VincentSHI1230/BTPanel-beautification@master/background/NekohaShizuku1.jpg')
+                    no-repeat;
                 background-color: #aaa;
                 background-size: cover;
                 font-family: 'Helvetica Neue', Helvetica, Arial, 'PingFangTC-Light', 'Microsoft YaHei', '微软雅黑',
