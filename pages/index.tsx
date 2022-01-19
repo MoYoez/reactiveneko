@@ -91,7 +91,7 @@ const IndexPage = ({ initialSteamPersonaName, steamPersonaNameUrl }: PropsWithCh
                         Lemon Flavours
                     </Account>
                     <Account href="https://twitter.com/lemonflavours" icon={FaTwitter} title="Twitter">
-                        @amphineko
+                        @LemonFlavours
                     </Account>
                     <Account href="mailto:i@himoyo.cn" icon={FaEnvelope} title="mail">
                         I#HiMoYo.cn
