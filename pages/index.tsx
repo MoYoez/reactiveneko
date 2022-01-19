@@ -8,6 +8,7 @@ import {
     FaSteam,
     FaQq,
     FaTwitter,
+    FaEnvelope,
 } from 'react-icons/fa'
 import { IoBulb, IoCloud, IoGitBranch, IoLanguage, IoLink, IoSchool } from 'react-icons/io5'
 import { Account, AccountList, Description, Paragraph } from '../components/blocks'
@@ -45,12 +46,11 @@ const fetchSteamPersonaName = async (url: string) => {
 
 const IndexPage = ({ initialSteamPersonaName, steamPersonaNameUrl }: PropsWithChildren<IndexPageProps>) => (
     <div className="container">
-        <Header
-            profileName="MoeMagicMango"
+        <Header profileName="MoeMagicMango">
             <div>
-                <LabelGroup icon={IoLink} title="Blog">
-                    <LabelItem><a href="https://imagic.run"></a></LabelItem>
-                </LabelGroup>
+                <a href="https://imagic.run">
+                    <LabelGroup icon={IoLink} title="Blog"></LabelGroup>
+                </a>
             </div>
             <div>
                 <LabelGroup icon={IoLanguage} title="languages">
@@ -69,20 +69,22 @@ const IndexPage = ({ initialSteamPersonaName, steamPersonaNameUrl }: PropsWithCh
                 <Description>
                     {/* <Paragraph>who is amphineko?</Paragraph> */}
                     <Paragraph>心之所向，素履以往</Paragraph>
-                    <Paragraph>Ciallo～(∠・ω< )⌒★</Paragraph>
+                    <Paragraph>Ciallo～(∠・ω&lt; )⌒★</Paragraph>
                     <Paragraph>你好吖，这边是夹子</Paragraph>
-                    <Paragraph>一名学生，没有什么特别引入注意的地方 喜欢折腾一些喜欢的东西，或者尝试一些新的爱好w</Paragraph>
-                     <Paragraph>如果需要更多信息， 可以往下翻翻惹</Paragraph>
+                    <Paragraph>
+                        一名学生，没有什么特别引入注意的地方 喜欢折腾一些喜欢的东西，或者尝试一些新的爱好w
+                    </Paragraph>
+                    <Paragraph>如果需要更多信息， 可以往下翻翻惹</Paragraph>
                 </Description>
             </Column>
             <Column>
                 <AccountList title="open-source">
-                    <Account href="https://github.com/moyoez/" icon={FaGithub} title="GitHub">
+                    <Account href="https://github.com/MoYoez" icon={FaGithub} title="GitHub">
                         MoYoez
                     </Account>
                 </AccountList>
                 <AccountList title="social network">
-                    <Account href="https://music.163.com/#/user/home?id=555696683" icon={FaMusic}  title="netease">
+                    <Account href="https://music.163.com/#/user/home?id=555696683" icon={FaMusic} title="netease">
                         MoeMagicMango
                     </Account>
                     <Account href="https://wpa.qq.com/msgrd?v=3&uin=1292581422&site=qq&menu=yes" icon={FaQq} title="QQ">
@@ -91,7 +93,7 @@ const IndexPage = ({ initialSteamPersonaName, steamPersonaNameUrl }: PropsWithCh
                     <Account href="https://twitter.com/lemonflavours" icon={FaTwitter} title="Twitter">
                         @amphineko
                     </Account>
-                    <Account href="i@himoyo.cn" icon={FaWeibo}  title="mail">
+                    <Account href="mailto:i@himoyo.cn" icon={FaEnvelope} title="mail">
                         I#HiMoYo.cn
                     </Account>
                 </AccountList>
@@ -117,10 +119,10 @@ const IndexPage = ({ initialSteamPersonaName, steamPersonaNameUrl }: PropsWithCh
             <Column>
                 <AccountList title="profiles">
                     <Account href="https://osu.ppy.sh/users/14730537" icon={FaCompactDisc} title="osu!">
-                   MoYoez
+                        MoYoez
                     </Account>
                     <Account href="https://steamcommunity.com/id/akirasweetz/" icon={FaSteam} title="Steam">
-                    MoeMagicMango
+                        MoeMagicMango
                     </Account>
                 </AccountList>
             </Column>
@@ -135,9 +137,7 @@ const IndexPage = ({ initialSteamPersonaName, steamPersonaNameUrl }: PropsWithCh
                     <FaExternalLinkAlt />
                 </span>
             </FooterParagraph>
-            <FooterParagraph icon={IoBulb}>
-                Copyright © 2021-2022 HiMoYo.
-            </FooterParagraph>
+            <FooterParagraph icon={IoBulb}>Copyright © 2021-2022 HiMoYo.</FooterParagraph>
         </Footer>
 
         <style jsx>{`
@@ -176,7 +176,8 @@ const IndexPage = ({ initialSteamPersonaName, steamPersonaNameUrl }: PropsWithCh
 
         <style jsx global>{`
             body {
-                background: url('https://cdn.jsdelivr.net/gh/VincentSHI1230/BTPanel-beautification@master/background/NekohaShizuku1.jpg') no-repeat;
+                background: url('https://cdn.jsdelivr.net/gh/VincentSHI1230/BTPanel-beautification@master/background/NekohaShizuku1.jpg')
+                    no-repeat;
                 background-color: #aaa;
                 background-size: cover;
                 font-family: 'Helvetica Neue', Helvetica, Arial, 'PingFangTC-Light', 'Microsoft YaHei', '微软雅黑',
