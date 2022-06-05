@@ -78,7 +78,7 @@ const IndexPage = ({ initialSteamPersonaName, steamPersonaNameUrl }: PropsWithCh
                 </Description>
             </Column>
             <Column>
-                <AccountList title="open-source">
+                <AccountList title="My Github">
                     <Account href="https://github.com/MoYoez" icon={FaGithub} title="GitHub">
                         MoYoez
                     </Account>
@@ -88,7 +88,7 @@ const IndexPage = ({ initialSteamPersonaName, steamPersonaNameUrl }: PropsWithCh
                         MoeMagicMango
                     </Account>
                     <Account href="https://wpa.qq.com/msgrd?v=3&uin=1292581422&site=qq&menu=yes" icon={FaQq} title="QQ">
-                        Lemon Flavours
+                        SoddaYukiMango
                     </Account>
                     <Account href="https://twitter.com/lemonflavours" icon={FaTwitter} title="Twitter">
                         @LemonFlavours
@@ -107,12 +107,12 @@ const IndexPage = ({ initialSteamPersonaName, steamPersonaNameUrl }: PropsWithCh
                     <Paragraph>
                         偏爱于一些独立游戏w
                         <br />
-                        同时也是个音游玩家
+                        同时也是个音游玩家 玩的比较杂
                         <br />
                         (*/ω＼*)
                     </Paragraph>
                     <Paragraph>
-                        <del className="deleted">或许?你可以看到我熬夜玩原神.jpg</del>
+                        <del className="deleted">某些情况下 咱会偷偷玩游戏w</del>
                     </Paragraph>
                 </Description>
             </Column>
@@ -176,7 +176,7 @@ const IndexPage = ({ initialSteamPersonaName, steamPersonaNameUrl }: PropsWithCh
 
         <style jsx global>{`
             body {
-                background: url('https://cdn.jsdelivr.net/gh/VincentSHI1230/BTPanel-beautification@master/background/NekohaShizuku1.jpg')
+                background: url('https://fastly.jsdelivr.net/gh/VincentSHI1230/BTPanel-beautification@master/background/NekohaShizuku1.jpg')
                     no-repeat;
                 background-color: #aaa;
                 background-size: cover;
