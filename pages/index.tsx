@@ -50,7 +50,7 @@ const IndexPage = (
                 </Description>
             </Column>
             <Column>
-                <AccountList title="My Github Profile">
+                <AccountList title="My Github">
                     <Account href="https://github.com/MoYoez" icon={FaGithub} title="GitHub">
                         MoYoez
                     </Account>
