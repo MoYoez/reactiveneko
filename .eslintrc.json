@@ -8,8 +8,7 @@
         "plugin:import/recommended",
         "plugin:import/typescript",
         "plugin:react-hooks/recommended",
-        "plugin:react/recommended",
-        "plugin:prettier/recommended"
+        "plugin:react/recommended"
     ],
     "parserOptions": {
         "ecmaVersion": 2021,
