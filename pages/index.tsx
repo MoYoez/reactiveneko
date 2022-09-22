@@ -1,5 +1,3 @@
-import { GetStaticProps } from 'next'
-import { PropsWithChildren } from 'react'
 import {
     FaCompactDisc,
     FaExternalLinkAlt,
@@ -14,41 +12,14 @@ import { IoBulb, IoCloud, IoGitBranch, IoLanguage, IoLink, IoSchool } from 'reac
 import { Account, AccountList, Description, Paragraph } from '../components/blocks'
 import { LabelGroup, LabelItem } from '../components/labels'
 import BackgroundHeader from '../public/assets/images/background-header.svg'
-import Background from '../public/assets/images/background.svg'
 import { Block, Column } from '../sections/block'
 import { Footer, FooterParagraph } from '../sections/footer'
 import { Header, ProfileNameStandout } from '../sections/header'
 
-interface IndexPageProps {
-    initialSteamPersonaName?: string
-    steamPersonaNameUrl?: string
-}
-
-interface SteamApiResponse {
-    response?: { players?: { personaname?: string }[] }
-}
-
-const fetchSteamPersonaName = async (url: string) => {
-    const response = await fetch(url)
-    if (!response.ok) {
-        throw new Error(`HTTP error: ${response.status}`)
-    }
-
-    const result = (await response.json()) as SteamApiResponse
-    const personaName = result.response?.players?.[0]?.personaname
-
-    if (typeof personaName === 'string') {
-        return personaName
-    } else {
-        throw new Error('Invalid response from Steam API')
-    }
-}
-
-const IndexPage = ({ initialSteamPersonaName, steamPersonaNameUrl }: PropsWithChildren<IndexPageProps>) => (
     <div className="container">
         <Header profileName="MoeMagicMango">
             <div>
-                <a href="https://imagic.run">
+                <a href="https://himoyo.cn" title="Meow~Here~">
                     <LabelGroup icon={IoLink} title="Blog"></LabelGroup>
                 </a>
             </div>
@@ -59,7 +30,7 @@ const IndexPage = ({ initialSteamPersonaName, steamPersonaNameUrl }: PropsWithCh
                     <LabelItem>English</LabelItem>
                 </LabelGroup>
                 <LabelGroup icon={IoSchool} title="status">
-                    <LabelItem>Just a student:D</LabelItem>
+                    <LabelItem>College Student/Programming for fun :P</LabelItem>
                 </LabelGroup>
             </div>
         </Header>
@@ -68,27 +39,27 @@ const IndexPage = ({ initialSteamPersonaName, steamPersonaNameUrl }: PropsWithCh
             <Column>
                 <Description>
                     {/* <Paragraph>who is amphineko?</Paragraph> */}
-                    <Paragraph>心之所向，素履以往</Paragraph>
+                    <Paragraph>Looking for the night that never comes.</Paragraph>
                     <Paragraph>Ciallo～(∠・ω&lt; )⌒★</Paragraph>
                     <Paragraph>你好吖，这边是夹子</Paragraph>
                     <Paragraph>
-                        一名学生，没有什么特别引入注意的地方 喜欢折腾一些喜欢的东西，或者尝试一些新的爱好w
+                        貌似没有什么特别之处呢~唯一的爱好可能就是<del className="deleted">睡觉💤</del>
                     </Paragraph>
-                    <Paragraph>如果需要更多信息， 可以往下翻翻惹</Paragraph>
+                    <Paragraph>~向下翻可以找到更多w</Paragraph>
                 </Description>
             </Column>
             <Column>
-                <AccountList title="My Github">
+                <AccountList title="My Github Profile">
                     <Account href="https://github.com/MoYoez" icon={FaGithub} title="GitHub">
                         MoYoez
                     </Account>
                 </AccountList>
-                <AccountList title="social network">
+                <AccountList title="Link To My Social Network❤">
                     <Account href="https://music.163.com/#/user/home?id=555696683" icon={FaMusic} title="netease">
                         MoeMagicMango
                     </Account>
                     <Account href="https://wpa.qq.com/msgrd?v=3&uin=1292581422&site=qq&menu=yes" icon={FaQq} title="QQ">
-                        SoddaYukiMango
+                        MoeMagicMango.
                     </Account>
                     <Account href="https://twitter.com/lemonflavours" icon={FaTwitter} title="Twitter">
                         @LemonFlavours
@@ -105,9 +76,14 @@ const IndexPage = ({ initialSteamPersonaName, steamPersonaNameUrl }: PropsWithCh
                 <Description>
                     {/* <Paragraph>who is amphineko?</Paragraph> */}
                     <Paragraph>
-                        偏爱于一些独立游戏w
+                    <br />
+                        大多数时候会去玩一些较为精品的独立游戏作品~
                         <br />
-                        同时也是个音游玩家 玩的比较杂
+                        <br />
+                        或者是和好朋友玩的独立游戏
+                        <br />
+                        <br />
+                        同时也是个音游玩家 貌似是除了街机都玩?  <del className="deleted">除了maimai</del>
                         <br />
                         (*/ω＼*)
                     </Paragraph>
@@ -131,7 +107,7 @@ const IndexPage = ({ initialSteamPersonaName, steamPersonaNameUrl }: PropsWithCh
         <Footer>
             <FooterParagraph icon={IoGitBranch}>
                 <a className="footer-link" href="https://github.com/amphineko/atomicneko">
-                    Fork this template on GitHub
+                    Fork this template on GitHub,the page is forked from here~
                 </a>
                 <span className="footer-external-link-icon">
                     <FaExternalLinkAlt />
@@ -176,7 +152,7 @@ const IndexPage = ({ initialSteamPersonaName, steamPersonaNameUrl }: PropsWithCh
 
         <style jsx global>{`
             body {
-                background: url('https://fastly.jsdelivr.net/gh/VincentSHI1230/BTPanel-beautification@master/background/NekohaShizuku1.jpg')
+                background: url('https://img1.imgtp.com/2022/09/22/xsQUvvxo.png')
                     no-repeat;
                 background-color: #aaa;
                 background-size: cover;
@@ -188,17 +164,6 @@ const IndexPage = ({ initialSteamPersonaName, steamPersonaNameUrl }: PropsWithCh
             }
         `}</style>
     </div>
-)
 
-export default IndexPage
 
-export const getStaticProps: GetStaticProps<IndexPageProps> = async () => {
-    const steamPersonaNameUrl = process.env.STEAM_PERSONA_NAME_URL
 
-    return {
-        props: {
-            initialSteamPersonaName: await fetchSteamPersonaName(steamPersonaNameUrl),
-            steamPersonaNameUrl,
-        },
-    }
-}
