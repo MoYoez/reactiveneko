@@ -1,3 +1,5 @@
+import { GetStaticProps } from 'next'
+import { PropsWithChildren } from 'react'
 import {
     FaCompactDisc,
     FaExternalLinkAlt,
@@ -16,7 +18,32 @@ import { Block, Column } from '../sections/block'
 import { Footer, FooterParagraph } from '../sections/footer'
 import { Header } from '../sections/header'
 
-const IndexPage = (
+interface IndexPageProps {
+    initialSteamPersonaName?: string
+    steamPersonaNameUrl?: string
+}
+
+interface SteamApiResponse {
+    response?: { players?: { personaname?: string }[] }
+}
+
+const fetchSteamPersonaName = async (url: string) => {
+    const response = await fetch(url)
+    if (!response.ok) {
+        throw new Error(`HTTP error: ${response.status}`)
+    }
+
+    const result = (await response.json()) as SteamApiResponse
+    const personaName = result.response?.players?.[0]?.personaname
+
+    if (typeof personaName === 'string') {
+        return personaName
+    } else {
+        throw new Error('Invalid response from Steam API')
+    }
+}
+
+const IndexPage = ({ initialSteamPersonaName, steamPersonaNameUrl }: PropsWithChildren<IndexPageProps>) => (
     <div className="container">
         <Header profileName="MoeMagicMango">
             <div>
@@ -168,5 +195,16 @@ const IndexPage = (
 
 )
 
+
 export default IndexPage
 
+export const getStaticProps: GetStaticProps<IndexPageProps> = async () => {
+    const steamPersonaNameUrl = process.env.STEAM_PERSONA_NAME_URL
+
+    return {
+        props: {
+            initialSteamPersonaName: await fetchSteamPersonaName(steamPersonaNameUrl),
+            steamPersonaNameUrl,
+        },
+    }
+}
