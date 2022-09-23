@@ -1,4 +1,3 @@
-import { GetStaticProps } from 'next'
 import { PropsWithChildren } from 'react'
 import {
     FaCompactDisc,
@@ -19,35 +18,13 @@ import { Footer, FooterParagraph } from '../sections/footer'
 import { Header } from '../sections/header'
 
 interface IndexPageProps {
-    initialSteamPersonaName?: string
-    steamPersonaNameUrl?: string
 }
 
-interface SteamApiResponse {
-    response?: { players?: { personaname?: string }[] }
-}
-
-const fetchSteamPersonaName = async (url: string) => {
-    const response = await fetch(url)
-    if (!response.ok) {
-        throw new Error(`HTTP error: ${response.status}`)
-    }
-
-    const result = (await response.json()) as SteamApiResponse
-    const personaName = result.response?.players?.[0]?.personaname
-
-    if (typeof personaName === 'string') {
-        return personaName
-    } else {
-        throw new Error('Invalid response from Steam API')
-    }
-}
-
-const IndexPage = ({ initialSteamPersonaName, steamPersonaNameUrl }: PropsWithChildren<IndexPageProps>) => (
+const IndexPage = ({  }: PropsWithChildren<IndexPageProps>) => (
     <div className="container">
         <Header profileName="MoeMagicMango">
             <div>
-                <a href="https://himoyo.cn" title="Meow~Here~">
+            <a href="https://himoyo.cn" title="Meow~Here~">
                     <LabelGroup icon={IoLink} title="Blog"></LabelGroup>
                 </a>
             </div>
@@ -58,7 +35,7 @@ const IndexPage = ({ initialSteamPersonaName, steamPersonaNameUrl }: PropsWithCh
                     <LabelItem>English</LabelItem>
                 </LabelGroup>
                 <LabelGroup icon={IoSchool} title="status">
-                    <LabelItem>College Student/Programming for fun :P</LabelItem>
+                    <LabelItem>College Student:P</LabelItem>
                 </LabelGroup>
             </div>
         </Header>
@@ -71,7 +48,7 @@ const IndexPage = ({ initialSteamPersonaName, steamPersonaNameUrl }: PropsWithCh
                     <Paragraph>Ciallo～(∠・ω&lt; )⌒★</Paragraph>
                     <Paragraph>你好吖，这边是夹子</Paragraph>
                     <Paragraph>
-                        貌似没有什么特别之处呢~唯一的爱好可能就是<del className="deleted">睡觉💤</del>
+                        貌似没有什么特别之处呢~唯一的爱好可能就<del className="deleted">是睡觉💤</del>
                     </Paragraph>
                     <Paragraph>~向下翻可以找到更多w</Paragraph>
                 </Description>
@@ -104,14 +81,11 @@ const IndexPage = ({ initialSteamPersonaName, steamPersonaNameUrl }: PropsWithCh
                 <Description>
                     {/* <Paragraph>who is amphineko?</Paragraph> */}
                     <Paragraph>
-                    <br />
                         大多数时候会去玩一些较为精品的独立游戏作品~
-                        <br />
                         <br />
                         或者是和好朋友玩的独立游戏
                         <br />
-                        <br />
-                        同时也是个音游玩家 貌似是除了街机都玩?  <del className="deleted">除了maimai</del>
+                        同时也是个音游玩家 貌似是除了街机都玩? <br /> <del className="deleted">除了maimai</del>
                         <br />
                         (*/ω＼*)
                     </Paragraph>
@@ -135,7 +109,7 @@ const IndexPage = ({ initialSteamPersonaName, steamPersonaNameUrl }: PropsWithCh
         <Footer>
             <FooterParagraph icon={IoGitBranch}>
                 <a className="footer-link" href="https://github.com/amphineko/atomicneko">
-                    Fork this template on GitHub,the page is forked from here~
+                    Fork this template on GitHub
                 </a>
                 <span className="footer-external-link-icon">
                     <FaExternalLinkAlt />
@@ -197,14 +171,3 @@ const IndexPage = ({ initialSteamPersonaName, steamPersonaNameUrl }: PropsWithCh
 
 
 export default IndexPage
-
-export const getStaticProps: GetStaticProps<IndexPageProps> = async () => {
-    const steamPersonaNameUrl = process.env.STEAM_PERSONA_NAME_URL
-
-    return {
-        props: {
-            initialSteamPersonaName: await fetchSteamPersonaName(steamPersonaNameUrl),
-            steamPersonaNameUrl,
-        },
-    }
-}
