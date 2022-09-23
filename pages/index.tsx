@@ -22,18 +22,22 @@ export default () => {
     return (
         <div className="container">
         <Header profileName="MoeMagicMango">
+
             <div>
-            <a href="https://himoyo.cn" title="Meow~Here~">
-                    <LabelGroup icon={IoLink} title="Blog"></LabelGroup>
+            <a href="https://himoyo.cn">
+                    <LabelGroup icon={IoLink} title="Blog">
+                    <LabelItem>Meow~Here~</LabelItem>
+                    </LabelGroup>
                 </a>
             </div>
+
             <div>
-                <LabelGroup icon={IoLanguage} title="languages">
+                <LabelGroup icon={IoLanguage} title="Languages">
                     <LabelItem>汉语</LabelItem>
                     <LabelItem>漢語</LabelItem>
                     <LabelItem>English</LabelItem>
                 </LabelGroup>
-                <LabelGroup icon={IoSchool} title="status">
+                <LabelGroup icon={IoSchool} title="Status">
                     <LabelItem>College Student:P</LabelItem>
                 </LabelGroup>
             </div>
@@ -47,7 +51,7 @@ export default () => {
                     <Paragraph>Ciallo～(∠・ω&lt; )⌒★</Paragraph>
                     <Paragraph>你好吖，这边是夹子</Paragraph>
                     <Paragraph>
-                        貌似没有什么特别之处呢~唯一的爱好可能就<del className="deleted">是睡觉💤</del>
+                        貌似没有什么特别之处呢~唯一的爱好可能<del className="deleted">是睡觉💤</del>
                     </Paragraph>
                     <Paragraph>~向下翻可以找到更多w</Paragraph>
                 </Description>
@@ -82,19 +86,16 @@ export default () => {
                     <Paragraph>
                         大多数时候会去玩一些较为精品的独立游戏作品~
                         <br />
-                        或者是和好朋友玩的独立游戏
+                        或者是和好朋友玩联机的游戏ww~
                         <br />
-                        同时也是个音游玩家 貌似是除了街机都玩? <br /> <del className="deleted">除了maimai</del>
+                        同时也是个音游玩家 貌似是<del className="deleted">除了maimai</del>都玩?
                         <br />
                         (*/ω＼*)
-                    </Paragraph>
-                    <Paragraph>
-                        <del className="deleted">某些情况下 咱会偷偷玩游戏w</del>
                     </Paragraph>
                 </Description>
             </Column>
             <Column>
-                <AccountList title="profiles">
+                <AccountList title="Game Profiles">
                     <Account href="https://osu.ppy.sh/users/14730537" icon={FaCompactDisc} title="osu!">
                         MoYoez
                     </Account>
