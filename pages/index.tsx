@@ -1,4 +1,4 @@
-import { PropsWithChildren } from 'react'
+/* eslint-disable react/display-name */
 import {
     FaCompactDisc,
     FaExternalLinkAlt,
@@ -9,6 +9,7 @@ import {
     FaTwitter,
     FaEnvelope,
 } from 'react-icons/fa'
+import React from 'react'
 import { IoBulb,  IoGitBranch, IoLanguage, IoLink, IoSchool } from 'react-icons/io5'
 import { Account, AccountList, Description, Paragraph } from '../components/blocks'
 import { LabelGroup, LabelItem } from '../components/labels'
@@ -17,9 +18,9 @@ import { Block, Column } from '../sections/block'
 import { Footer, FooterParagraph } from '../sections/footer'
 import { Header } from '../sections/header'
 
-
-const IndexPage = (
-    <div className="container">
+export default () => {
+    return (
+        <div className="container">
         <Header profileName="MoeMagicMango">
             <div>
             <a href="https://himoyo.cn" title="Meow~Here~">
@@ -164,8 +165,5 @@ const IndexPage = (
             }
         `}</style>
     </div>
-
-)
-
-
-export default IndexPage
+    )
+}
