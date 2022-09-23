@@ -18,7 +18,7 @@ import { Footer, FooterParagraph } from '../sections/footer'
 import { Header } from '../sections/header'
 
 
-const IndexPage = (PropsWithChildren) ; (
+const IndexPage = (
     <div className="container">
         <Header profileName="MoeMagicMango">
             <div>
