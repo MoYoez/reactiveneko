@@ -17,10 +17,8 @@ import { Block, Column } from '../sections/block'
 import { Footer, FooterParagraph } from '../sections/footer'
 import { Header } from '../sections/header'
 
-interface IndexPageProps {
-}
 
-const IndexPage = ({  }: PropsWithChildren<IndexPageProps>) => (
+const IndexPage = (PropsWithChildren) ; (
     <div className="container">
         <Header profileName="MoeMagicMango">
             <div>
