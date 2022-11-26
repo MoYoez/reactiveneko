@@ -24,9 +24,9 @@ export default () => {
         <Header profileName="MoeMagicMango">
 
             <div>
-            <a href="https://himoyo.cn">
+            <a href="https://moe.himoyo.cn">
                     <LabelGroup icon={IoLink} title="Blog">
-                    <LabelItem>Meow~Here~</LabelItem>
+                    <LabelItem>柠檬苏打夹心~</LabelItem>
                     </LabelGroup>
                 </a>
             </div>
@@ -154,7 +154,7 @@ export default () => {
 
         <style jsx global>{`
             body {
-                background: url('https://img1.imgtp.com/2022/09/22/xsQUvvxo.png')
+                background: url('https://cdn.himoyo.cn/img_service/004kfMibgy1guucjwe7uhj62da16pkjm02.jpg')
                     no-repeat;
                 background-color: #aaa;
                 background-size: cover;
