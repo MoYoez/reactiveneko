@@ -64,7 +64,7 @@ export default () => {
                 </AccountList>
                 <AccountList title="Link To My Social Network❤">
                     <Account href="https://music.163.com/#/user/home?id=555696683" icon={FaMusic} title="netease">
-                        MoeMagicMango
+                        MapleNeko_
                     </Account>
                     <Account href="https://wpa.qq.com/msgrd?v=3&uin=1292581422&site=qq&menu=yes" icon={FaQq} title="QQ">
                         MoeMagicMango.
