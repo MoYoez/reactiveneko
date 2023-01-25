@@ -38,7 +38,7 @@ export default () => {
                     <LabelItem>English</LabelItem>
                 </LabelGroup>
                 <LabelGroup icon={IoSchool} title="Status">
-                    <LabelItem>College Student:P</LabelItem>
+                    <LabelItem>CS Student awa</LabelItem>
                 </LabelGroup>
             </div>
         </Header>
@@ -100,7 +100,7 @@ export default () => {
                         MoYoez
                     </Account>
                     <Account href="https://steamcommunity.com/id/akirasweetz/" icon={FaSteam} title="Steam">
-                        MoeMagicMango
+                        Morning Call.🍀
                     </Account>
                 </AccountList>
             </Column>
