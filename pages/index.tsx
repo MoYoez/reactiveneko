@@ -86,9 +86,9 @@ export default () => {
                     <Paragraph>
                         大多数时候会去玩一些较为精品的独立游戏作品~
                         <br />
-                        或者是和好朋友玩联机的游戏ww~
+                        或者是和好朋友玩联机的游戏w~
                         <br />
-                        同时也是个音游玩家 貌似是<del className="deleted">除了maimai</del>都玩?
+                        同时也是个音游玩家 同时玩移动端和街机~例如mai和中二
                         <br />
                         (*/ω＼*)
                     </Paragraph>
