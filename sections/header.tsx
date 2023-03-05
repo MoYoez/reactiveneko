@@ -1,7 +1,7 @@
 import { PropsWithChildren, ReactNode } from 'react'
-const HeadPictureOriginal = 'https://cravatar.cn/avatar/22b242a28bb848f2629f2a636bba9c03?s=600'
-const HeadPicture = 'https://cravatar.cn/avatar/22b242a28bb848f2629f2a636bba9c03?s=600'
-const HeadPictureWebP = 'https://cravatar.cn/avatar/22b242a28bb848f2629f2a636bba9c03?s=600'
+const HeadPictureOriginal = 'https://cravatar.cn/avatar/22b242a28bb848f2629f2a636bba9c03?s=400'
+const HeadPicture = 'https://cravatar.cn/avatar/22b242a28bb848f2629f2a636bba9c03?s=400'
+const HeadPictureWebP = 'https://cravatar.cn/avatar/22b242a28bb848f2629f2a636bba9c03?s=400'
 
 export const ProfileNameStandout = ({
     backgroundColor,
