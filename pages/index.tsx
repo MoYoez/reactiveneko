@@ -9,10 +9,15 @@ import {
     FaTwitter,
     FaEnvelope,
     FaCat,
+    FaUbuntu,
+    FaWindows,
+    FaGit,
+    FaChevronRight,
+    FaList,
+    FaBlog,
 } from 'react-icons/fa'
 import React from 'react'
-import { VscEdit } from "react-icons/vsc"
-import { IoBulb, IoLanguage, IoLink, IoSchool } from 'react-icons/io5'
+import { IoBulb, IoLanguage, IoSchool } from 'react-icons/io5'
 import { Account, AccountList, Description, Paragraph } from '../components/blocks'
 import { LabelGroup, LabelItem } from '../components/labels'
 import { Block, Column } from '../sections/block'
@@ -35,37 +40,45 @@ export default () => {
                     <LabelItem>Undergraduate</LabelItem>
                 </LabelGroup>
                 <LabelGroup icon={FaCat} title="Status">
-                    <LabelItem>"unknown"</LabelItem>
+                    <LabelItem>"Unknown Data"</LabelItem>
                 </LabelGroup>
             </div>
             <div>
-            <LabelGroup icon={VscEdit} title="DevOps">
-                    <LabelItem>汉语</LabelItem>
-                    <LabelItem>漢語</LabelItem>
-                    <LabelItem>English</LabelItem>
+            <LabelGroup icon={FaUbuntu} title="DevOps">
+                    <LabelItem>Ubuntu</LabelItem>
+                </LabelGroup>
+                <LabelGroup icon={FaWindows} title=''>
+                    <LabelItem>Windows</LabelItem>
+                </LabelGroup>
+                <LabelGroup icon={FaGit} title=''>
+                    <LabelItem>Git</LabelItem>
                 </LabelGroup>
             </div>
         </Header>
-
         <Block>
-            <Column>
+        <Column>
                 <Description>
-                    {/* <Paragraph>who is amphineko?</Paragraph> */}
-                    <Paragraph>Stay Hungry, Stay Foolish.</Paragraph>
-                    <Paragraph>你好吖，这边是夹子</Paragraph>
-                    <Paragraph>
-                        貌似没有什么特别之处呢~唯一的爱好可能<del className="deleted">是睡觉💤</del>
-                    </Paragraph>
-                    <Paragraph>~向下翻可以找到更多w</Paragraph>
+                <h1><FaChevronRight/> Current </h1>
+                <Paragraph>目前是一名在校学生，对前端应用和后端语言略微精通，大概就是什么都会一点点的水平x</Paragraph>
+                    <h1> <FaList/> 关于个人爱好 </h1> 
+                    <Paragraph>貌似没有什么特别~唯一的爱好可能是<del className="deleted">睡觉💤</del></Paragraph>
+                        <Paragraph>大多数时间是玩一些相对不错的独立游戏和做一些个人感觉会很不错的事。</Paragraph>
+                    <Paragraph>例如去写一些博客内容或者是学习一下新的代码或者UI设计一类的事。</Paragraph>
+                    <h1> <FaList/> Plan </h1> 
+                    <Paragraph>大概学完一部分有兴趣的编程语言，例如 Go Python 和 C 一类</Paragraph>
+                    <Paragraph>计划成为一名合格的全栈工程师，能力能被认可。</Paragraph>
+                    <Paragraph></Paragraph>
                 </Description>
-            </Column>
+                </Column>
+
             <Column>
-                <AccountList title="My Github">
+            <AccountList title="Link To My Social Network❤">
                     <Account href="https://github.com/MoYoez" icon={FaGithub} title="GitHub">
-                        MoYoez
+                        MoeMagicMango
                     </Account>
-                </AccountList>
-                <AccountList title="Link To My Social Network❤">
+                    <Account href="https://moe.himoyo.cn" icon={FaBlog} title="博客boki~">
+                    https://moe.himoyo.cn
+                    </Account>
                     <Account href="https://music.163.com/#/user/home?id=555696683" icon={FaMusic} title="netease">
                         MapleNeko_
                     </Account>
@@ -79,6 +92,21 @@ export default () => {
                         I#HiMoYo.cn
                     </Account>
                 </AccountList>
+                <AccountList title="写过的小玩意w">
+                <Account href="https://github.com/MoYoez/Lucy_ZeroBot" icon={FaGithub} title="Lucy_Zerobot">
+                HiMoYo下LucyBOT
+                    </Account>
+                    <Account href="https://github.com/MoYoez/Lucy_SideBook" icon={FaGithub} title="Lucy_SideBook">
+                        关于Lucy的说明书，基于VuePress搭建
+                    </Account>
+                    <Account href="https://github.com/MoYoez/music-radio" icon={FaGithub} title="music-box">
+                        基于WebAudio API 开发的在线音乐播放器
+                    </Account>
+                    <Account href="https://github.com/FloatTech/ZeroBot-Plugin" icon={FaGithub} title="Zerobot-Plugin">
+                    基于 ZeroBot 的 OneBot 插件
+                    </Account>
+
+                </AccountList>
             </Column>
         </Block>
 
@@ -86,15 +114,11 @@ export default () => {
             <Column>
                 <Description>
                     {/* <Paragraph>who is amphineko?</Paragraph> */}
+                    <h1><FaChevronRight/> Game! </h1>
                     <Paragraph>
-                        大多数时候会去玩一些较为精品的独立游戏作品~
-                        <br />
-                        或者是和好朋友玩联机的游戏w~
-                        <br />
-                        同时也是个音游玩家 同时玩移动端和街机~例如mai和中二
-                        <br />
-                        (*/ω＼*)
-                    </Paragraph>
+                    大部分是音游哦w 主修 Arc+PJSK 类移动端音游</Paragraph>
+                    <Paragraph>有可能会在假期看到咱出勤，同时咱也是个MaiMai + 中二玩家</Paragraph>
+                    <Paragraph>欢迎一起拼机！或者来加咱的Steam也是可的，或许咱可能会跟你一起玩一些联机游戏(*/ω＼*)</Paragraph>
                 </Description>
             </Column>
             <Column>
@@ -107,6 +131,8 @@ export default () => {
                     </Account>
                 </AccountList>
             </Column>
+
+            
         </Block>
 
         <Footer>
@@ -143,7 +169,6 @@ export default () => {
                 color: inherit;
                 text-decoration: none;
             }
-
             .deleted {
                 color: #777;
             }

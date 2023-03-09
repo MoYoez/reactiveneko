@@ -130,7 +130,6 @@ export const Header = ({ children, profileName }: PropsWithChildren<{ profileNam
                 height: 100%;
                 width: 100%;
             }
-
             .head-picture-container {
                 background: #fff;
                 border: 0.5em solid #fff;
