@@ -35,7 +35,7 @@ export default () => {
                     <LabelItem>Undergraduate</LabelItem>
                 </LabelGroup>
                 <LabelGroup icon={FaCat} title="Status">
-                    <LabelItem>'unknown'</LabelItem>
+                    <LabelItem>"unknown"</LabelItem>
                 </LabelGroup>
             </div>
             <div>
