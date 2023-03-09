@@ -1,7 +1,5 @@
 import { PropsWithChildren, ReactNode } from 'react'
-const HeadPictureOriginal = 'https://cravatar.cn/avatar/22b242a28bb848f2629f2a636bba9c03?s=400'
-const HeadPicture = 'https://cravatar.cn/avatar/22b242a28bb848f2629f2a636bba9c03?s=400'
-const HeadPictureWebP = 'https://cravatar.cn/avatar/22b242a28bb848f2629f2a636bba9c03?s=400'
+const HeadPictureOriginal = 'https://gravatar.loli.net/avatar/22b242a28bb848f2629f2a636bba9c03?s=400'
 
 export const ProfileNameStandout = ({
     backgroundColor,
@@ -69,11 +67,13 @@ export const ProfileName = ({ children }: PropsWithChildren<unknown>) => (
         {children}
         <style jsx>{`
             .profile-name {
-                color: white;
-                font-family: 'Courier New';
-                font-size: 2.5rem;
-                margin: 0 0.25em;
-                padding: 2rem 0;
+                color: #f5f5f5;
+                display: inline-block;
+                font-weight: 600;
+                font-size: 40px;
+                line-height: 1.65em;
+                margin: .25em .5em .25em 0;
+                text-shadow: 2px 2px 4px rgba(0,0,0,.25)
             }
         `}</style>
     </div>
@@ -83,11 +83,7 @@ export const Header = ({ children, profileName }: PropsWithChildren<{ profileNam
     <header className="row">
         <div className="column left-side">
             <a className="head-picture-container" href={HeadPictureOriginal}>
-                <picture>
-                    <source srcSet={HeadPictureWebP} type="image/webp" />
-                    <source srcSet={HeadPicture} type="image/png" />
-                    <img alt="head picture of amphineko" className="head-picture" src={HeadPicture} />
-                </picture>
+                    <img alt="user pic" className="head-picture" src={HeadPictureOriginal} />
             </a>
         </div>
 
@@ -99,13 +95,15 @@ export const Header = ({ children, profileName }: PropsWithChildren<{ profileNam
         <style jsx>{`
             .row {
                 align-items: center;
-                background: rgba(0, 0, 0, 0.8);
+                background: rgba(243,205,205, 0.7);
                 border-top-left-radius: 1rem;
                 box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.25);
                 display: flex;
                 flex: 1;
                 flex-direction: row;
                 flex-wrap: wrap;
+                display: flex;
+                justify-content: flex-end;
             }
 
             .column {

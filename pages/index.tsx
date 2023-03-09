@@ -8,12 +8,13 @@ import {
     FaQq,
     FaTwitter,
     FaEnvelope,
+    FaCat,
 } from 'react-icons/fa'
 import React from 'react'
-import { IoBulb,  IoGitBranch, IoLanguage, IoLink, IoSchool } from 'react-icons/io5'
+import { VscEdit } from "react-icons/vsc"
+import { IoBulb, IoLanguage, IoLink, IoSchool } from 'react-icons/io5'
 import { Account, AccountList, Description, Paragraph } from '../components/blocks'
 import { LabelGroup, LabelItem } from '../components/labels'
-import BackgroundHeader from '../public/assets/images/background-header.svg'
 import { Block, Column } from '../sections/block'
 import { Footer, FooterParagraph } from '../sections/footer'
 import { Header } from '../sections/header'
@@ -22,23 +23,26 @@ export default () => {
     return (
         <div className="container">
         <Header profileName="MoeMagicMango">
-
             <div>
-            <a href="https://moe.himoyo.cn">
-                    <LabelGroup icon={IoLink} title="Blog">
-                    <LabelItem>柠檬苏打夹心~</LabelItem>
-                    </LabelGroup>
-                </a>
-            </div>
-
-            <div>
-                <LabelGroup icon={IoLanguage} title="Languages">
+            <LabelGroup icon={IoLanguage} title="Languages">
                     <LabelItem>汉语</LabelItem>
                     <LabelItem>漢語</LabelItem>
                     <LabelItem>English</LabelItem>
                 </LabelGroup>
-                <LabelGroup icon={IoSchool} title="Status">
-                    <LabelItem>CS Student awa</LabelItem>
+            </div>
+            <div>
+                <LabelGroup icon={IoSchool} title="Education">
+                    <LabelItem>Undergraduate</LabelItem>
+                </LabelGroup>
+                <LabelGroup icon={FaCat} title="Status">
+                    <LabelItem>'unknown'</LabelItem>
+                </LabelGroup>
+            </div>
+            <div>
+            <LabelGroup icon={VscEdit} title="DevOps">
+                    <LabelItem>汉语</LabelItem>
+                    <LabelItem>漢語</LabelItem>
+                    <LabelItem>English</LabelItem>
                 </LabelGroup>
             </div>
         </Header>
@@ -47,8 +51,7 @@ export default () => {
             <Column>
                 <Description>
                     {/* <Paragraph>who is amphineko?</Paragraph> */}
-                    <Paragraph>Looking for the night that never comes.</Paragraph>
-                    <Paragraph>Ciallo～(∠・ω&lt; )⌒★</Paragraph>
+                    <Paragraph>Stay Hungry, Stay Foolish.</Paragraph>
                     <Paragraph>你好吖，这边是夹子</Paragraph>
                     <Paragraph>
                         貌似没有什么特别之处呢~唯一的爱好可能<del className="deleted">是睡觉💤</del>
@@ -100,35 +103,29 @@ export default () => {
                         MoYoez
                     </Account>
                     <Account href="https://steamcommunity.com/id/akirasweetz/" icon={FaSteam} title="Steam">
-                        Morning Call.🍀
+                    ⭐MoeMagicMango⭐
                     </Account>
                 </AccountList>
             </Column>
         </Block>
 
         <Footer>
-            <FooterParagraph icon={IoGitBranch}>
-                <a className="footer-link" href="https://github.com/amphineko/atomicneko">
-                    Fork this template on GitHub
+                <FooterParagraph icon={IoBulb}>Copyright © 2021-2023 HiMoYo Global. | <a className="footer-link" href="https://github.com/amphineko/atomicneko">
+                     Fork this template on GitHub
                 </a>
                 <span className="footer-external-link-icon">
                     <FaExternalLinkAlt />
-                </span>
-            </FooterParagraph>
-            <FooterParagraph icon={IoBulb}>Copyright © 2021-2022 HiMoYo.</FooterParagraph>
+                </span></FooterParagraph>
         </Footer>
 
         <style jsx>{`
             .container {
-                background: url('${BackgroundHeader}') no-repeat;
-                background-color: #aaa;
+                background: rgba(243,205,205,.82);
                 background-size: cover;
-                border-top-left-radius: 1rem;
-                box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.25);
-                display: flex;
-                flex-direction: column;
-                max-width: 64em;
-                margin: 0 auto;
+                box-shadow: 0 0 .15em .15em rgba(0,0,0,.125);
+                padding-top: 1em;
+                max-width: 65em;
+                margin: 0 100px 0 auto
             }
 
             .footer-link {
@@ -154,11 +151,11 @@ export default () => {
 
         <style jsx global>{`
             body {
-                background: url('https://cdn.himoyo.cn/img_service/004kfMibgy1guucjwe7uhj62da16pkjm02.jpg')
+                background: url('https://cdn.himoyo.cn/img_service/waifu_personbg.jpg')
                     no-repeat;
                 background-color: #aaa;
                 background-size: cover;
-                font-family: 'Helvetica Neue', Helvetica, Arial, 'PingFangTC-Light', 'Microsoft YaHei', '微软雅黑',
+                font-family: 'Helvetica Neue', Helvetica, Arial, 'Microsoft YaHei', '微软雅黑',
                     'STHeiti Light', STXihei, '华文细黑', Heiti, '黑体', 'sans-serif';
                 margin: 0;
                 min-height: 100vh;

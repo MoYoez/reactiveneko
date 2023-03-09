@@ -22,6 +22,7 @@ export const Description = ({ children }: PropsWithChildren<unknown>) => (
             .description {
                 display: block;
                 padding: 1.5em;
+                font-weight:bold;
             }
         `}</style>
     </>

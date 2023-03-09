@@ -22,8 +22,8 @@ export const Block = ({ children }: PropsWithChildren<{ breakpoint?: string }>) 
         <section className="block">{children}</section>
         <style jsx>{`
             .block {
-                background: #ffffffee;
-                box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.25);
+                background: #FFFFFFBF;
+                box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.3);
                 align-items: center;
                 display: flex;
                 flex: 1;
