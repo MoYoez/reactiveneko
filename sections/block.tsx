@@ -23,17 +23,17 @@ export const Block = ({ children }: PropsWithChildren<{ breakpoint?: string }>) 
         <style jsx>{`
             .block {
                 background: #FFFFFFBF;
-                box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.3);
+                box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.4);
                 align-items: center;
-                display: flex;
-                flex: 1;
                 flex-direction: row;
                 flex-wrap: wrap;
                 width: 100%;
+                display: flex;
+                flex: 1;
             }
 
             .block {
-                margin-top: 1rem;
+                margin-top: 1em;
             }
         `}</style>
     </>

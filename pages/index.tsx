@@ -94,13 +94,13 @@ export default () => {
                 </AccountList>
                 <AccountList title="写过的小玩意w">
                 <Account href="https://github.com/MoYoez/Lucy_ZeroBot" icon={FaGithub} title="Lucy_Zerobot">
-                HiMoYo下LucyBOT
+                Zerobot三方分支Lucy
                     </Account>
                     <Account href="https://github.com/MoYoez/Lucy_SideBook" icon={FaGithub} title="Lucy_SideBook">
-                        关于Lucy的说明书，基于VuePress搭建
+                        基于VuePress搭建的Lucy说明书
                     </Account>
                     <Account href="https://github.com/MoYoez/music-radio" icon={FaGithub} title="music-box">
-                        基于WebAudio API 开发的在线音乐播放器
+                        基于 WebAudio API 开发的音乐播放器
                     </Account>
                     <Account href="https://github.com/FloatTech/ZeroBot-Plugin" icon={FaGithub} title="Zerobot-Plugin">
                     基于 ZeroBot 的 OneBot 插件
@@ -146,12 +146,12 @@ export default () => {
 
         <style jsx>{`
             .container {
-                background: rgba(243,205,205,.82);
+                background: rgba(243,205,205,.60);
                 background-size: cover;
                 box-shadow: 0 0 .15em .15em rgba(0,0,0,.125);
                 padding-top: 1em;
-                max-width: 65em;
-                margin: 0 100px 0 auto
+                max-width: 64em;
+                margin: 0 auto;
             }
 
             .footer-link {

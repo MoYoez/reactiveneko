@@ -125,7 +125,6 @@ export const Header = ({ children, profileName }: PropsWithChildren<{ profileNam
                     flex-basis: 100%;
                 }
             }
-
             .head-picture {
                 height: 100%;
                 width: 100%;
