@@ -17,7 +17,9 @@
     "rules": {
         "@next/next/no-img-element": "off",
         "import/no-unresolved": "off",
-        "react/react-in-jsx-scope": "off"
+        "react/react-in-jsx-scope": "off",
+        "react/no-unknown-property": "off",
+        "react/no-unescaped-entities": "off"
     },
     "settings": {
         "react": {
