@@ -124,7 +124,7 @@ export default () => {
             <Column>
                 <AccountList title="Game Profiles">
                     <Account href="https://osu.ppy.sh/users/14730537" icon={FaCompactDisc} title="osu!">
-                        MoYoez
+                    KoiParadise
                     </Account>
                     <Account href="https://steamcommunity.com/id/akirasweetz/" icon={FaSteam} title="Steam">
                     ⭐MoeMagicMango⭐
