@@ -1,5 +1,5 @@
 import { PropsWithChildren, ReactNode } from 'react'
-const HeadPictureOriginal = 'https://cdn.sep.cc/avatar/22b242a28bb848f2629f2a636bba9c03?s=400'
+const HeadPictureOriginal = 'https://cdn.sep.cc/avatar/22b242a28bb848f2629f2a636bba9c03?s=600'
 
 export const ProfileNameStandout = ({
     backgroundColor,
