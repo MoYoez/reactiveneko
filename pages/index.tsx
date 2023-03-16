@@ -74,16 +74,16 @@ export default () => {
             <Column>
             <AccountList title="Link To My Social Network❤">
                     <Account href="https://github.com/MoYoez" icon={FaGithub} title="GitHub">
-                        MoeMagicMango
+                        KoiParadise
                     </Account>
-                    <Account href="https://moe.himoyo.cn" icon={FaBlog} title="博客boki~">
+                    <Account href="https://moe.himoyo.cn" icon={FaBlog} title="boki~">
                     https://moe.himoyo.cn
                     </Account>
                     <Account href="https://music.163.com/#/user/home?id=555696683" icon={FaMusic} title="netease">
                         MapleNeko_
                     </Account>
                     <Account href="https://wpa.qq.com/msgrd?v=3&uin=1292581422&site=qq&menu=yes" icon={FaQq} title="QQ">
-                        MoeMagicMango.
+                        HafuKoish.⭐
                     </Account>
                     <Account href="https://twitter.com/lemonflavours" icon={FaTwitter} title="Twitter">
                         @LemonFlavours
@@ -97,10 +97,10 @@ export default () => {
                 Zerobot三方分支Lucy
                     </Account>
                     <Account href="https://github.com/MoYoez/Lucy_SideBook" icon={FaGithub} title="Lucy_SideBook">
-                        基于VuePress搭建的Lucy说明书
+                        VuePress搭建的Lucy说明书
                     </Account>
                     <Account href="https://github.com/MoYoez/music-radio" icon={FaGithub} title="music-box">
-                        基于 WebAudio API 开发的音乐播放器
+                        基于 WebAudio API 三方音乐播放器
                     </Account>
                     <Account href="https://github.com/FloatTech/ZeroBot-Plugin" icon={FaGithub} title="Zerobot-Plugin">
                     基于 ZeroBot 的 OneBot 插件
@@ -116,7 +116,7 @@ export default () => {
                     {/* <Paragraph>who is amphineko?</Paragraph> */}
                     <h1><FaChevronRight/> Game! </h1>
                     <Paragraph>
-                    大部分是音游哦w 主修 Arc+PJSK 类移动端音游</Paragraph>
+                    大部分是音游哦w 主修 Arc+pjsk 类移动端音游</Paragraph>
                     <Paragraph>有可能会在假期看到咱出勤，同时咱也是个MaiMai + 中二玩家</Paragraph>
                     <Paragraph>欢迎一起拼机！或者来加咱的Steam也是可的，或许咱可能会跟你一起玩一些联机游戏(*/ω＼*)</Paragraph>
                 </Description>
