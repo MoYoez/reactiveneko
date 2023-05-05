@@ -58,6 +58,7 @@ export default () => {
             <div>
                 <LabelGroup icon={FaThList} title="Fingerprint">
                     <LabelItem>A0DB 23CE E377 AF83 06E6  21D9 8636 C00F 8EAD 0ECD</LabelItem>
+                    </LabelGroup>
                 </div>
         </Header>
         <Block>
