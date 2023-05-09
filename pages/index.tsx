@@ -9,13 +9,13 @@ import {
     FaTwitter,
     FaEnvelope,
     FaCat,
-    FaUbuntu,
     FaWindows,
     FaGit,
     FaChevronRight,
     FaList,
-    FaBlog,
+    FaBlog, FaGamepad, FaPen
 } from 'react-icons/fa'
+import { GrArchlinux } from 'react-icons/gr'
 import React from 'react'
 import { IoBulb, IoLanguage, IoSchool } from 'react-icons/io5'
 import { Account, AccountList, Description, Paragraph } from '../components/blocks'
@@ -40,12 +40,12 @@ export default () => {
                     <LabelItem>Undergraduate</LabelItem>
                 </LabelGroup>
                 <LabelGroup icon={FaCat} title="Status">
-                    <LabelItem>"Unknown Data"</LabelItem>
+                    <LabelItem>"Unknown(?"</LabelItem>
                 </LabelGroup>
             </div>
             <div>
-            <LabelGroup icon={FaUbuntu} title="DevOps">
-                    <LabelItem>Ubuntu</LabelItem>
+            <LabelGroup icon={GrArchlinux} title="DevOps">
+                    <LabelItem>Arch Linux</LabelItem>
                 </LabelGroup>
                 <LabelGroup icon={FaWindows} title=''>
                     <LabelItem>Windows</LabelItem>
@@ -58,9 +58,9 @@ export default () => {
         <Block>
         <Column>
                 <Description>
-                <h1><FaChevronRight/> Current </h1>
+                <h1><FaChevronRight/> aw? </h1>
                 <Paragraph>目前是一名在校学生，对前端应用和后端语言略微精通，大概就是什么都会一点点的水平x</Paragraph>
-                    <h1> <FaList/> 关于个人爱好 </h1> 
+                    <h1> <FaList/>  <FaPen/> </h1>
                     <Paragraph>貌似没有什么特别~唯一的爱好可能是<del className="deleted">睡觉💤</del></Paragraph>
                         <Paragraph>大多数时间是玩一些相对不错的独立游戏和做一些个人感觉会很不错的事。</Paragraph>
                     <Paragraph>例如去写一些博客内容或者是学习一下新的代码或者UI设计一类的事。</Paragraph>
@@ -92,7 +92,7 @@ export default () => {
                         I#HiMoYo.cn
                     </Account>
                 </AccountList>
-                <AccountList title="写过的小玩意w">
+                <AccountList title="Toys">
                 <Account href="https://github.com/MoYoez/Lucy_ZeroBot" icon={FaGithub} title="Lucy_Zerobot">
                 Zerobot三方分支Lucy
                     </Account>
@@ -100,12 +100,11 @@ export default () => {
                         Lucy说明书
                     </Account>
                     <Account href="https://github.com/MoYoez/music-radio" icon={FaGithub} title="music-box">
-                        基于 WebAudio API 三方音乐播放器
+                        基于 WebAudio API 播放器
                     </Account>
                     <Account href="https://github.com/FloatTech/ZeroBot-Plugin" icon={FaGithub} title="Zerobot-Plugin">
-                    基于 ZeroBot 的 OneBot 插件
+                    基于ZeroBot的插件
                     </Account>
-
                 </AccountList>
             </Column>
         </Block>
@@ -114,7 +113,8 @@ export default () => {
             <Column>
                 <Description>
                     {/* <Paragraph>who is amphineko?</Paragraph> */}
-                    <h1><FaChevronRight/> Game! </h1>
+                    <h1><span className="icon">
+                <FaChevronRight /> <FaGamepad></FaGamepad> </span></h1>
                     <Paragraph>
                     大部分是音游哦w 主修 Arc+pjsk 类移动端音游</Paragraph>
                     <Paragraph>有可能会在假期看到咱出勤，同时咱也是个MaiMai + 中二玩家</Paragraph>
@@ -175,17 +175,21 @@ export default () => {
         `}</style>
 
         <style jsx global>{`
-            body {
-                background: url('https://cdn.himoyo.cn/img_service/waifu_personbg.jpg')
-                    no-repeat;
-                background-color: #aaa;
-                background-size: cover;
-                font-family: 'Helvetica Neue', Helvetica, Arial, 'Microsoft YaHei', '微软雅黑',
-                    'STHeiti Light', STXihei, '华文细黑', Heiti, '黑体', 'sans-serif';
-                margin: 0;
-                min-height: 100vh;
-                padding: 1em 0;
-            }
+          h1 {
+            font-size: 1.3em;
+            font-weight: normal;
+            
+          }
+
+          body {
+            background: #aaa url('https://cdn.himoyo.cn/img_service/waifu_personbg.jpg') no-repeat;
+            background-size: cover;
+            font-family: 'Microsoft YaHei', '微软雅黑',
+            'STHeiti Light', 'sans-serif';
+            margin: 0;
+            min-height: 100vh;
+            padding: 1em 0;
+          }
         `}</style>
     </div>
     )

@@ -18,7 +18,7 @@ export const FooterParagraph = ({
         <style jsx>{`
             .paragraph {
                 background-color: ${backgroundColor ?? '#F6D0D0'};
-                color: ${color ?? '#FFFFFF'};
+                color: ${color ?? '#F8DEDE'};
                 font-size: 0.8em;
                 margin: 0;
                 padding: 0.75em 1em;
@@ -30,11 +30,12 @@ export const FooterParagraph = ({
                 vertical-align: middle;
                 width: 1.25em;
             }
+            
         `}</style>
     </>
 )
 
-export const Footer = ({ children }: PropsWithChildren<unknown>) => (
+export const Footer = ({ children }: PropsWithChildren) => (
     <>
         <footer className="footer">{children}</footer>
         <style jsx>{`

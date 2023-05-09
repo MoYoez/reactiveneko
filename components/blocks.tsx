@@ -2,7 +2,7 @@ import { PropsWithChildren } from 'react'
 import { IconType } from 'react-icons'
 import { FaExternalLinkAlt } from 'react-icons/fa'
 
-export const Paragraph = ({ children }: PropsWithChildren<unknown>) => (
+export const Paragraph = ({ children }: PropsWithChildren) => (
     <>
         <p>{children}</p>
         <style jsx>{`
@@ -15,7 +15,7 @@ export const Paragraph = ({ children }: PropsWithChildren<unknown>) => (
     </>
 )
 
-export const Description = ({ children }: PropsWithChildren<unknown>) => (
+export const Description = ({ children }: PropsWithChildren) => (
     <>
         <div className="description">{children}</div>
         <style jsx>{`

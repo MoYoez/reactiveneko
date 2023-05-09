@@ -15,6 +15,6 @@
         "strict": false,
         "target": "es5"
     },
-    "include": ["assets.d.ts", "next-env.d.ts", "**/*.ts", "**/*.tsx"],
+    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
     "exclude": ["node_modules"]
 }
