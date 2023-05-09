@@ -15,7 +15,6 @@ import {
     FaChevronRight,
     FaList,
     FaBlog,
-    FaThList,
 } from 'react-icons/fa'
 import React from 'react'
 import { IoBulb, IoLanguage, IoSchool } from 'react-icons/io5'
@@ -55,11 +54,6 @@ export default () => {
                     <LabelItem>Git</LabelItem>
                 </LabelGroup>
             </div>
-            <div>
-                <LabelGroup icon={FaThList} title="Fingerprint">
-                    <LabelItem>A0DB 23CE E377 AF83 06E6  21D9 8636 C00F 8EAD 0ECD</LabelItem>
-                    </LabelGroup>
-                </div>
         </Header>
         <Block>
         <Column>
