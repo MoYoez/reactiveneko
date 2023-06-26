@@ -46,12 +46,13 @@ export const LabelGroup = ({
             <style jsx>{`
                 .label-group {
                     background-color: #f5f5f5;
-                    box-shadow: 0 0 0.25em 0.25em rgba(0, 0, 0, 0.1);
+                    box-shadow: 0 0 0.25em 0.25em rgba(0, 0, 0, 0.2);
                     display: inline-block;
-                    line-height: 2.25em;
-                    margin: 1.25em 0.5em;
-                    padding: 0 0.75em;
+                    line-height: 2.5em;
+                    margin: 1.5em 0.5em;
+                    padding: 0 0.8em;
                     position: relative;
+                    font-size: 1.2em;
                 }
 
                 .label-group::before {
@@ -59,6 +60,7 @@ export const LabelGroup = ({
                     color: white;
                     content: '${title}';
                     font-size: 0.75em;
+                    padding: 0em 0 0.5em; 
                     position: absolute;
                     text-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
                 }

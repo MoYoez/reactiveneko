@@ -1,4 +1,3 @@
-/* eslint-disable react/display-name */
 import {
     FaCompactDisc,
     FaExternalLinkAlt,
@@ -15,7 +14,7 @@ import {
     FaList,
     FaBlog, FaGamepad, FaPen
 } from 'react-icons/fa'
-import { GrArchlinux } from 'react-icons/gr'
+import { GrArchlinux,GrDebian } from 'react-icons/gr'
 import React from 'react'
 import { IoBulb, IoLanguage, IoSchool } from 'react-icons/io5'
 import { Account, AccountList, Description, Paragraph } from '../components/blocks'
@@ -24,6 +23,7 @@ import { Block, Column } from '../sections/block'
 import { Footer, FooterParagraph } from '../sections/footer'
 import { Header } from '../sections/header'
 
+// eslint-disable-next-line react/display-name
 export default () => {
     return (
         <div className="container">
@@ -40,7 +40,7 @@ export default () => {
                     <LabelItem>Undergraduate</LabelItem>
                 </LabelGroup>
                 <LabelGroup icon={FaCat} title="Status">
-                    <LabelItem>"Unknown(?"</LabelItem>
+                    <LabelItem>"Cat"</LabelItem>
                 </LabelGroup>
             </div>
             <div>
@@ -54,70 +54,81 @@ export default () => {
                     <LabelItem>Git</LabelItem>
                 </LabelGroup>
             </div>
+            <div>
+                <LabelGroup icon={GrDebian} title='Current'>
+                    <LabelItem>A Debianer🍥?</LabelItem>
+                </LabelGroup>
+            </div>
         </Header>
         <Block>
+            <Column width={"100%"}>
+                <div className={"header-text-render"}>心之所向，素履以往。</div>
+                <div className={"header-text-render-addby"}>---《尘曲》</div>
+                </Column>
         <Column>
                 <Description>
-                <h1><FaChevronRight/> aw? </h1>
-                <Paragraph>目前是一名在校学生，对前端应用和后端语言略微精通，大概就是什么都会一点点的水平x</Paragraph>
+                <h1><FaChevronRight/> awa? </h1>
+                <Paragraph>目前是一名在校学生，也算是一只猫🐱，主技术栈是Python, React, NodeJs和Go，大概算是个半个全栈工程师(?</Paragraph>
                     <h1> <FaList/>  <FaPen/> </h1>
-                    <Paragraph>貌似没有什么特别~唯一的爱好可能是<del className="deleted">睡觉💤</del></Paragraph>
-                        <Paragraph>大多数时间是玩一些相对不错的独立游戏和做一些个人感觉会很不错的事。</Paragraph>
-                    <Paragraph>例如去写一些博客内容或者是学习一下新的代码或者UI设计一类的事。</Paragraph>
+                    <Paragraph>貌似没有什么特别~唯一的爱好可能是<del className="deleted">睡觉💤</del>或者<del className="deleted">划水</del></Paragraph>
+                        <Paragraph>大多数时间已经从玩游戏转到做好玩的东西(? 例如是做一些小玩具</Paragraph>
+                    <Paragraph>写一些博客内容或者是学习一下新的代码貌似也算不错呢x，或许可以考虑多做点试试(?</Paragraph>
                     <h1> <FaList/> Plan </h1> 
-                    <Paragraph>大概学完一部分有兴趣的编程语言，例如 Go Python 和 C 一类</Paragraph>
+                    <Paragraph>大概学完一部分有兴趣的编程语言，例如 Rust 和 Go </Paragraph>
                     <Paragraph>计划成为一名合格的全栈工程师，能力能被认可。</Paragraph>
                     <Paragraph></Paragraph>
                 </Description>
                 </Column>
-
             <Column>
             <AccountList title="Link To My Social Network❤">
                     <Account href="https://github.com/MoYoez" icon={FaGithub} title="GitHub">
                         KoiParadise
                     </Account>
-                    <Account href="https://moe.himoyo.cn" icon={FaBlog} title="boki~">
+                    <Account href="https://moe.himoyo.cn" icon={FaBlog} title="Blog">
                     https://moe.himoyo.cn
                     </Account>
                     <Account href="https://music.163.com/#/user/home?id=555696683" icon={FaMusic} title="netease">
-                        MapleNeko_
+                        MoeMagicMango
                     </Account>
                     <Account href="https://wpa.qq.com/msgrd?v=3&uin=1292581422&site=qq&menu=yes" icon={FaQq} title="QQ">
-                        MoeMagicMango.⭐
+                        MoeMagicMango💫
                     </Account>
                     <Account href="https://twitter.com/lemonflavours" icon={FaTwitter} title="Twitter">
                         @LemonFlavours
                     </Account>
                     <Account href="mailto:i@himoyo.cn" icon={FaEnvelope} title="mail">
-                        I#HiMoYo.cn
+                        i@himoyo.cn
                     </Account>
                 </AccountList>
                 <AccountList title="Toys">
                 <Account href="https://github.com/MoYoez/Lucy_ZeroBot" icon={FaGithub} title="Lucy_Zerobot">
-                Zerobot三方分支Lucy
+                    HiMoYoBot Lucy
                     </Account>
-                    <Account href="https://github.com/MoYoez/Lucy_SideBook" icon={FaGithub} title="Lucy_SideBook">
-                        Lucy说明书
+                    <Account href="https://github.com/MoYoez/Text-WaterMark" icon={FaGithub} title="Lucy_SideBook">
+                        在文字上实现添加水印
                     </Account>
                     <Account href="https://github.com/MoYoez/music-radio" icon={FaGithub} title="music-box">
-                        基于 WebAudio API 播放器
+                        基于 WebAudio 的简易播放器
                     </Account>
                     <Account href="https://github.com/FloatTech/ZeroBot-Plugin" icon={FaGithub} title="Zerobot-Plugin">
                     基于ZeroBot的插件
                     </Account>
                 </AccountList>
             </Column>
+            <Column width={"100%"}>
+                <div className={"least-intro"}> ^^ Always try to be pleasant and not be harsh all the time, perhaps I wanted to meet more people and learn more. (/≧▽≦)/
+                </div>
+                  </Column>
         </Block>
 
         <Block>
             <Column>
                 <Description>
-                    {/* <Paragraph>who is amphineko?</Paragraph> */}
                     <h1><span className="icon">
                 <FaChevronRight /> <FaGamepad></FaGamepad> </span></h1>
                     <Paragraph>
-                    大部分是音游哦w 主修 Arc+pjsk 类移动端音游</Paragraph>
-                    <Paragraph>有可能会在假期看到咱出勤，同时咱也是个MaiMai + 中二玩家</Paragraph>
+                    大部分是音游哦w 主修 Arcaea + Project Sekai 类移动端音游</Paragraph>
+                    <Paragraph>有可能会在假期看到咱出勤，同时咱也是个maimai + chuni玩家</Paragraph>
                     <Paragraph>欢迎一起拼机！或者来加咱的Steam也是可的，或许咱可能会跟你一起玩一些联机游戏(*/ω＼*)</Paragraph>
                 </Description>
             </Column>
@@ -131,12 +142,10 @@ export default () => {
                     </Account>
                 </AccountList>
             </Column>
-
-            
         </Block>
 
         <Footer>
-                <FooterParagraph icon={IoBulb}>Copyright © 2021-2023 HiMoYo Global. | <a className="footer-link" href="https://github.com/amphineko/atomicneko">
+                <FooterParagraph color={"#c39595"} icon={IoBulb}>Copyright © 2021-2023 HiMoYo. | <a className="footer-link" href="https://github.com/amphineko/atomicneko">
                      Fork this template on GitHub
                 </a>
                 <span className="footer-external-link-icon">
@@ -146,12 +155,33 @@ export default () => {
 
         <style jsx>{`
             .container {
-                background: rgba(243,205,205,.60);
+                width: 65%;
+                height: 75%;
+                background: rgba(243,205,205,.70);
                 background-size: cover;
                 box-shadow: 0 0 .15em .15em rgba(0,0,0,.125);
                 padding-top: 1em;
-                max-width: 64em;
+                max-width: 80em;
                 margin: 0 auto;
+                .header-text-render {
+                  margin-bottom: 2em;
+                  position: relative;
+                  font-size: 1.5em;
+                  left: 40%;
+                  top: 2em;
+                }
+              .header-text-render-addby {
+                  margin-bottom: 1em;
+                  position: relative;
+                  font-size: 1.5em;
+                  float: right;
+                  right: 30%;
+                  top: 1em;
+                  }
+                  .least-intro {
+                  margin: 1em;
+                  font-weight: lighter;
+                  }
             }
 
             .footer-link {
@@ -176,19 +206,19 @@ export default () => {
 
         <style jsx global>{`
           h1 {
-            font-size: 1.3em;
-            font-weight: normal;
-            
+            font-size: 1.5em;
+            font-weight: bold;
           }
 
           body {
-            background: #aaa url('https://cdn.himoyo.cn/img_service/waifu_personbg.jpg') no-repeat;
+            width:auto;
+            height: 100%;
+            background: url('https://cdn.himoyo.cn/img_service/IMG_0645(20230601-111656).PNG') no-repeat;
             background-size: cover;
-            font-family: 'Microsoft YaHei', '微软雅黑',
-            'STHeiti Light', 'sans-serif';
-            margin: 0;
-            min-height: 100vh;
+            margin: 0 0 0 0;
+            min-height: 175vh;
             padding: 1em 0;
+            font-family: "Noto Sans","Noto Sans SC","Microsoft YaHei",serif;
           }
         `}</style>
     </div>

@@ -19,6 +19,7 @@ export const ProfileName = ({ children }: PropsWithChildren) => (
 
 export const Header = ({ children, profileName }: PropsWithChildren<{ profileName: ReactNode }>) => (
     <header className="row">
+        <link rel="stylesheet" href="https://fonts.loli.net/css?family=Noto+Sans|Noto+Sans+SC&display=swap" media="all"></link>
         <div className="column left-side">
             <a className="head-picture-container" href={HeadPictureOriginal}>
                     <img alt="user pic" className="head-picture" src={HeadPictureOriginal} />

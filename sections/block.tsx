@@ -1,5 +1,6 @@
 import { PropsWithChildren } from 'react'
 
+
 export const Column = ({ children, width }: PropsWithChildren<{ width?: string }>) => (
     <>
         <div className="column">{children}</div>
