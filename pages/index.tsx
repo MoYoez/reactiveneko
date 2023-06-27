@@ -156,9 +156,9 @@ export default () => {
         <style jsx>{`
             .container {
                 position: relative;
-                left: 3em;
+                left: 5em;
                 min-width: 30em;
-                max-width: 64em;
+                max-width: 70em;
                 background: rgba(243,205,205,.70);
                 background-size: cover;
                 box-shadow: 0 0 .15em .15em rgba(0,0,0,.125);
@@ -168,7 +168,7 @@ export default () => {
                   margin-bottom: 2em;
                   position: relative;
                   font-size: 1.5em;
-                  left: 40%;
+                  text-align: center;
                   top: 2em;
                 }
               .header-text-render-addby {
