@@ -158,7 +158,7 @@ export default () => {
                 position: relative;
                 left: 5em;
                 min-width: 30em;
-                max-width: 70em;
+                max-width: 64em;
                 background: rgba(243,205,205,.70);
                 background-size: cover;
                 box-shadow: 0 0 .15em .15em rgba(0,0,0,.125);
