@@ -104,7 +104,7 @@ export default () => {
                 <Account href="https://github.com/MoYoez/Lucy_ZeroBot" icon={FaGithub} title="Lucy_Zerobot">
                     HiMoYoBot Lucy
                     </Account>
-                    <Account href="https://github.com/MoYoez/Text-WaterMark" icon={FaGithub} title="Lucy_SideBook">
+                    <Account href="https://github.com/MoYoez/Text-WaterMark" icon={FaGithub} title="Text_WaterMark">
                         在文字上实现添加水印
                     </Account>
                     <Account href="https://github.com/MoYoez/music-radio" icon={FaGithub} title="music-box">
@@ -155,13 +155,14 @@ export default () => {
 
         <style jsx>{`
             .container {
-                width: 65%;
-                height: 75%;
+                position: relative;
+                left: 3em;
+                min-width: 30em;
+                max-width: 64em;
                 background: rgba(243,205,205,.70);
                 background-size: cover;
                 box-shadow: 0 0 .15em .15em rgba(0,0,0,.125);
                 padding-top: 1em;
-                max-width: 80em;
                 margin: 0 auto;
                 .header-text-render {
                   margin-bottom: 2em;
@@ -209,14 +210,11 @@ export default () => {
             font-size: 1.5em;
             font-weight: bold;
           }
-
           body {
-            width:auto;
-            height: 100%;
             background: url('https://cdn.himoyo.cn/img_service/IMG_0645(20230601-111656).PNG') no-repeat;
             background-size: cover;
-            margin: 0 0 0 0;
-            min-height: 175vh;
+            margin: 0 auto;
+            min-height: 100vh;
             padding: 1em 0;
             font-family: "Noto Sans","Noto Sans SC","Microsoft YaHei",serif;
           }

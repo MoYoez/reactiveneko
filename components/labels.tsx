@@ -49,7 +49,7 @@ export const LabelGroup = ({
                     box-shadow: 0 0 0.25em 0.25em rgba(0, 0, 0, 0.2);
                     display: inline-block;
                     line-height: 2.5em;
-                    margin: 1.5em 0.5em;
+                    margin: 1.25em 1em;
                     padding: 0 0.8em;
                     position: relative;
                     font-size: 1.2em;
