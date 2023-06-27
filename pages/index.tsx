@@ -145,6 +145,7 @@ export default () => {
         </Block>
 
         <Footer>
+            <script src="https://cdn.himoyo.cn/handsome/js/title_change.js"></script>
                 <FooterParagraph color={"#c39595"} icon={IoBulb}>Copyright © 2021-2023 HiMoYo. | <a className="footer-link" href="https://github.com/amphineko/atomicneko">
                      Fork this template on GitHub
                 </a>
