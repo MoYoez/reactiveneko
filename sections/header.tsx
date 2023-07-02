@@ -22,6 +22,7 @@ export const Header = ({ children, profileName }: PropsWithChildren<{ profileNam
         <title>NekoNeko~</title>
         <link rel="dns-prefetch" href="https://cdn.himoyo.cn"></link>
         <link rel="stylesheet" href="https://fonts.loli.net/css?family=Noto+Sans|Noto+Sans+SC&display=swap" media="all"></link>
+        
         <div className="column left-side">
             <a className="head-picture-container" href={HeadPictureOriginal}>
                     <img alt="user pic" className="head-picture" src={HeadPictureOriginal} />

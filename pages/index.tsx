@@ -12,7 +12,7 @@ import {
     FaGit,
     FaChevronRight,
     FaList,
-    FaBlog, FaGamepad, FaPen
+    FaBlog, FaGamepad, FaPen,FaMastodon
 } from 'react-icons/fa'
 import { GrArchlinux,GrDebian } from 'react-icons/gr'
 import React from 'react'
@@ -23,8 +23,7 @@ import { Block, Column } from '../sections/block'
 import { Footer, FooterParagraph } from '../sections/footer'
 import { Header } from '../sections/header'
 
-// eslint-disable-next-line react/display-name
-export default () => {
+const MainContainer =  () => {
     return (
         <div className="container">
         <Header profileName="MoeMagicMango">
@@ -68,11 +67,13 @@ export default () => {
         <Column>
                 <Description>
                 <h1><FaChevronRight/> awa? </h1>
-                <Paragraph>目前是一名在校学生，也算是一只猫🐱，主技术栈是Python, React, NodeJs和Go，大概算是个半个全栈工程师(?</Paragraph>
+                <Paragraph>目前是一名在校学生，算是一只猫~，主技术栈是Python, React, NodeJs和Go，大概算是个半个全栈工程师(?</Paragraph>
                     <h1> <FaList/>  <FaPen/> </h1>
                     <Paragraph>貌似没有什么特别~唯一的爱好可能是<del className="deleted">睡觉💤</del>或者<del className="deleted">划水</del></Paragraph>
                         <Paragraph>大多数时间已经从玩游戏转到做好玩的东西(? 例如是做一些小玩具</Paragraph>
                     <Paragraph>写一些博客内容或者是学习一下新的代码貌似也算不错呢x，或许可以考虑多做点试试(?</Paragraph>
+                    <Paragraph>如果实在没有事情做的话，貌似也可以体验一下运维的快乐，例如维护一些开源项目的发展~</Paragraph>
+                    <Paragraph>"Keep it Simple,Stupid."</Paragraph>
                     <h1> <FaList/> Plan </h1> 
                     <Paragraph>大概学完一部分有兴趣的编程语言，例如 Rust 和 Go </Paragraph>
                     <Paragraph>计划成为一名合格的全栈工程师，能力能被认可。</Paragraph>
@@ -95,6 +96,9 @@ export default () => {
                     </Account>
                     <Account href="https://twitter.com/lemonflavours" icon={FaTwitter} title="Twitter">
                         @LemonFlavours
+                    </Account>
+                    <Account href='https://msu.a233.shop/web/@moyoez' icon={FaMastodon} title="Mastodon">
+                        MoeMagicMango@hello.2heng.xin
                     </Account>
                     <Account href="mailto:i@himoyo.cn" icon={FaEnvelope} title="mail">
                         i@himoyo.cn
@@ -223,3 +227,5 @@ export default () => {
     </div>
     )
 }
+
+export default MainContainer
