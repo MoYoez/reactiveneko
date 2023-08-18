@@ -1,17 +1,7 @@
 import { PropsWithChildren } from 'react'
 import { IconType } from 'react-icons'
 import { FaExternalLinkAlt } from 'react-icons/fa'
-import React, { useState } from 'react';
-
-const [isHovered, setIsHovered] = useState(false);
-
-const handleMouseEnter = () => {
-    setIsHovered(true);
-};
-
-const handleMouseLeave = () => {
-    setIsHovered(false);
-};
+import React from 'react';
 
 export const Paragraph = ({ children }: PropsWithChildren) => (
     <>
@@ -28,25 +18,16 @@ export const Paragraph = ({ children }: PropsWithChildren) => (
 
 export const SpoilerText = ({ children }: PropsWithChildren) => (
     <>
-        <span
-            className={`spoiler-text ${isHovered ? 'hovered' : ''}`}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-        >
-            {children}
-            <style jsx>{`
-        .spoiler-text {
-          font-size: 1.25em;
-          font-weight: 300;
-          line-height: 1.75em;
-          background-color: #333;
-          color: ${isHovered ? 'white' : '#333'};
-        }
-        .hovered {
-          background-color: ${isHovered ? '#666' : '#333'};
-        }
-      `}</style>
-        </span>
+        <span className="spoiler-text">{children}</span>
+        <style jsx>{`
+            .spoiler-text {
+                font-size: 1.25em;
+                font-weight: 300;
+                line-height: 1.75em;
+                background-color: #333;
+                color: #333;
+            }
+        `}</style>
     </>
 )
 
