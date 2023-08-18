@@ -16,6 +16,7 @@ import {
 } from 'react-icons/fa'
 import { GrArchlinux, GrDebian } from 'react-icons/gr'
 import { PiBugDroidBold } from "react-icons/pi";
+import { BsStars } from "react-icons/bs"
 import React from 'react'
 import { IoBulb, IoLanguage, IoSchool } from 'react-icons/io5'
 import { Account, AccountList, Description, Paragraph, SpoilerText } from '../components/blocks'
@@ -42,6 +43,9 @@ const MainContainer = () => {
                     <LabelGroup icon={FaCat} title="Status">
                         <LabelItem>"Cat"</LabelItem>
                     </LabelGroup>
+                    <LabelGroup icon={BsStars} title="">
+                        <LabelItem>"Magician"</LabelItem>
+                    </LabelGroup>
                 </div>
                 <div>
                     <LabelGroup icon={GrArchlinux} title="DevOps">
@@ -56,7 +60,7 @@ const MainContainer = () => {
                 </div>
                 <div>
                     <LabelGroup icon={GrDebian} title='Current'>
-                        <LabelItem>A Debianer🍥?</LabelItem>
+                        <LabelItem>A Debianer🍥</LabelItem>
                     </LabelGroup>
                     <LabelGroup icon={PiBugDroidBold} title=''>
                         <LabelItem>CTFer</LabelItem>
