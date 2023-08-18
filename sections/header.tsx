@@ -1,9 +1,9 @@
 import { PropsWithChildren, ReactNode } from 'react'
-const HeadPictureOriginal = 'https://cdn.sep.cc/avatar/6fd22617894ee4de431dc28927bcd1bb?s=600'
+const HeadPictureOriginal = 'https://cravatar.cn/avatar/6fd22617894ee4de431dc28927bcd1bb?s=600'
 export const ProfileName = ({ children }: PropsWithChildren) => (
-    <div className="profile-name">
-        {children}
-        <style jsx>{`
+  <div className="profile-name">
+    {children}
+    <style jsx>{`
             .profile-name {
                 color: #f5f5f5;
                 display: inline-block;
@@ -14,27 +14,27 @@ export const ProfileName = ({ children }: PropsWithChildren) => (
                 text-shadow: 2px 2px 4px rgba(0,0,0,.25)
             }
         `}</style>
-    </div>
+  </div>
 )
 
 export const Header = ({ children, profileName }: PropsWithChildren<{ profileName: ReactNode }>) => (
-    <header className="row">
-        <title>NekoNeko~</title>
-        <link rel="dns-prefetch" href="https://cdn.himoyo.cn"></link>
-        <link rel="stylesheet" href="https://fonts.loli.net/css?family=Noto+Sans|Noto+Sans+SC&display=swap" media="all"></link>
-        
-        <div className="column left-side">
-            <a className="head-picture-container" href={HeadPictureOriginal}>
-                    <img alt="user pic" className="head-picture" src={HeadPictureOriginal} />
-            </a>
-        </div>
+  <header className="row">
+    <title>NekoNeko~</title>
+    <link rel="dns-prefetch" href="https://cdn.himoyo.cn"></link>
+    <link rel="stylesheet" href="https://fonts.loli.net/css?family=Noto+Sans|Noto+Sans+SC&display=swap" media="all"></link>
 
-        <div className="column right-side">
-            <ProfileName>{profileName}</ProfileName>
-            <div>{children}</div>
-        </div>
+    <div className="column left-side">
+      <a className="head-picture-container" href={HeadPictureOriginal}>
+        <img alt="user pic" className="head-picture" src={HeadPictureOriginal} />
+      </a>
+    </div>
 
-        <style jsx>{`
+    <div className="column right-side">
+      <ProfileName>{profileName}</ProfileName>
+      <div>{children}</div>
+    </div>
+
+    <style jsx>{`
           .row {
             align-items: center;
             background: rgba(243, 205, 205, 0.7);
@@ -81,5 +81,5 @@ export const Header = ({ children, profileName }: PropsWithChildren<{ profileNam
             overflow: hidden;
           }
         `}</style>
-    </header>
+  </header>
 )
