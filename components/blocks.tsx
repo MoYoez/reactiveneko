@@ -15,6 +15,21 @@ export const Paragraph = ({ children }: PropsWithChildren) => (
     </>
 )
 
+export const SpoilerText = ({ children }: PropsWithChildren) => (
+    <>
+        <span className="spoiler-text">{children}</span>
+        <style jsx>{`
+            .spoiler-text {
+                font-size: 1.25em;
+                font-weight: 300;
+                line-height: 1.75em;
+                background-color: #333;
+                color: #333;
+            }
+        `}</style>
+    </>
+)
+
 export const Description = ({ children }: PropsWithChildren) => (
     <>
         <div className="description">{children}</div>
