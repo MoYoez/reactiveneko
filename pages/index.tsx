@@ -71,8 +71,8 @@ const MainContainer = () => {
                 <Column>
                     <Description>
                         <h1><FaChevronRight /> awa? </h1>
-                        <h1> <FaList />  <FaPen /> </h1>
                         <Paragraph>设定上是猫娘&魔法师, 不过按照技术栈定义也可以为半个全栈工程师 ()</Paragraph>
+                        <h1> <FaList />  <FaPen /> </h1>
                         <Paragraph>貌似没有什么特别~唯一的爱好可能是<del className="deleted">睡觉💤</del>或者<del className="deleted">划水</del></Paragraph>
                         <Paragraph>大多数时间已经从玩游戏转到做好玩的东西(? 例如是做一些小玩具</Paragraph>
                         <Paragraph>写一些博客内容或者是学习一下新的代码貌似也算不错呢x，或许可以考虑多做点试试(?</Paragraph>
