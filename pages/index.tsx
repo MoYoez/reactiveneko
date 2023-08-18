@@ -141,7 +141,7 @@ const MainContainer = () => {
                             <FaChevronRight /> <FaGamepad></FaGamepad> </span></h1>
                         <Paragraph>
                             大部分是音游哦w 主修 <del className='del'>Arcaea</del> + Project Sekai 类移动端音游</Paragraph>
-                        <SpoilerText>Thanks to Arcaea, I no longer play it ^^ </SpoilerText>
+                        <SpoilerText>Thanks to Guy(Lowiro), I no longer play it ^^ </SpoilerText>
                         <Paragraph>有可能会在假期看到咱出勤，同时咱也是个maimai + chuni玩家</Paragraph>
                         <Paragraph>欢迎一起拼机！或者来加咱的Steam也是可的，或许咱可能会跟你一起玩一些联机游戏(*/ω＼*)</Paragraph>
                     </Description>
