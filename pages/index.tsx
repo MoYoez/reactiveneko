@@ -28,7 +28,7 @@ import React from 'react'
 const MainContainer = () => {
     return (
         <div className="container">
-            <Header profileName="🍀MoeMagicMango💫">
+            <Header profileName="MoeMagicMango🍀">
                 <div>
                     <LabelGroup icon={IoLanguage} title="Languages">
                         <LabelItem>汉语</LabelItem>
@@ -220,7 +220,7 @@ const MainContainer = () => {
             font-weight: bold;
           }
           body {
-            background: url('https://cdn.himoyo.cn/img_service/1700303241723.jpg') no-repeat;
+            background: url('https://cdn.himoyo.cn/img_service/2628866d3dbdb972febb35681e709083888e128b_s2_n2_y1.png') no-repeat;
             background-size: cover;
             margin: 0 auto;
             min-height: 100vh;
