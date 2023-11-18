@@ -220,7 +220,7 @@ const MainContainer = () => {
             font-weight: bold;
           }
           body {
-            background: url('https://cdn.himoyo.cn/img_service/IMG_0645(20230601-111656).PNG') no-repeat;
+            background: url('https://cdn.himoyo.cn/img_service/1700303241723.jpg') no-repeat;
             background-size: cover;
             margin: 0 auto;
             min-height: 100vh;
