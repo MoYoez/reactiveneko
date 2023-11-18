@@ -18,7 +18,7 @@ import { GrUbuntu } from 'react-icons/gr'
 import { PiShootingStarLight } from "react-icons/pi";
 import React from 'react'
 import { IoBulb, IoLanguage, IoSchool } from 'react-icons/io5'
-import { Account, AccountList, Description, Paragraph } from '../components/blocks'
+import { Account, AccountList, Description, Paragraph, SpoilerText } from '../components/blocks'
 import { LabelGroup, LabelItem } from '../components/labels'
 import { Block, Column } from '../sections/block'
 import { Footer, FooterParagraph } from '../sections/footer'
@@ -71,7 +71,7 @@ const MainContainer = () => {
                 <Column>
                     <Description>
                         <h1><FaChevronRight /> awa? </h1>
-                        <Paragraph>目前是一名在校学生，算是一只猫~，主技术栈是Python, React, NodeJs和Go，大概算是个半个全栈工程师(?</Paragraph>
+                        <Paragraph>设定上是猫娘&魔法师, 不过按照技术栈定义也可以为半个全栈工程师 ()</Paragraph>
                         <h1> <FaList />  <FaPen /> </h1>
                         <Paragraph>貌似没有什么特别~唯一的爱好可能是<del className="deleted">睡觉💤</del>或者<del className="deleted">划水</del></Paragraph>
                         <Paragraph>大多数时间已经从玩游戏转到做好玩的东西(? 例如是做一些小玩具</Paragraph>
@@ -79,7 +79,8 @@ const MainContainer = () => {
                         <Paragraph>如果实在没有事情做的话，貌似也可以体验一下运维的快乐，例如维护一些开源项目的发展~</Paragraph>
                         <Paragraph>"Keep it Simple,Stupid."</Paragraph>
                         <h1> <FaList /> Plan </h1>
-                        <Paragraph>大概学完一部分有兴趣的编程语言，例如 Rust 和 Go </Paragraph>
+                        <Paragraph>大概学完一部分有兴趣的编程语言，例如 Rust 和 C# </Paragraph>
+                        <Paragraph>目前正参与学校的 CTF 训练，不知道有什么成就呢x </Paragraph>
                         <Paragraph>计划成为一名合格的全栈工程师，能力能被认可。</Paragraph>
                         <Paragraph></Paragraph>
                     </Description>
@@ -96,7 +97,7 @@ const MainContainer = () => {
                             MoeMagicMango
                         </Account>
                         <Account href="https://wpa.qq.com/msgrd?v=3&uin=1292581422&site=qq&menu=yes" icon={FaQq} title="QQ">
-                            MoeMagicMango💫
+                            🍀MoeMagicMango🍥💫
                         </Account>
                         <Account href="https://twitter.com/lemonflavours" icon={FaTwitter} title="Twitter">
                             @LemonFlavours
