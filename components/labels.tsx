@@ -1,9 +1,13 @@
 import { PropsWithChildren } from 'react'
 import { IconType } from 'react-icons'
 
-export const LabelItem = ({ children }: PropsWithChildren) => {
+export const LabelItem = ({ children, icon: Icon, }: PropsWithChildren<{
+    icon?: IconType
+    title?: string
+}>) => {
     return (
         <span className="label-item">
+            {Icon && <Icon fill='true' className="icon" />}
             {children}
             <style jsx>{`
                 .label-item {
@@ -29,6 +33,8 @@ export const LabelItem = ({ children }: PropsWithChildren) => {
         </span>
     )
 }
+
+
 export const LabelGroup = ({
     children,
     icon: Icon,

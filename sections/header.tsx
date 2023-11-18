@@ -9,8 +9,9 @@ export const ProfileName = ({ children }: PropsWithChildren) => (
                 display: inline-block;
                 font-weight: 600;
                 font-size: 40px;
+                font-family: 'Noto Sans,'Noto Sans SC';
                 line-height: 1.65em;
-                margin: .25em .5em .25em 0;
+                margin: .30em .5em .25em 0;
                 text-shadow: 2px 2px 4px rgba(0,0,0,.25)
             }
         `}</style>

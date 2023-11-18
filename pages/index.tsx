@@ -16,18 +16,19 @@ import {
 } from 'react-icons/fa'
 import { GrUbuntu } from 'react-icons/gr'
 import { PiShootingStarLight } from "react-icons/pi";
-import React from 'react'
 import { IoBulb, IoLanguage, IoSchool } from 'react-icons/io5'
-import { Account, AccountList, Description, Paragraph, SpoilerText } from '../components/blocks'
+import { RxMagicWand } from "react-icons/rx";
+import { Account, AccountList, Description, Paragraph } from '../components/blocks'
 import { LabelGroup, LabelItem } from '../components/labels'
 import { Block, Column } from '../sections/block'
 import { Footer, FooterParagraph } from '../sections/footer'
 import { Header } from '../sections/header'
+import React from 'react'
 
 const MainContainer = () => {
     return (
         <div className="container">
-            <Header profileName="MoeMagicMango">
+            <Header profileName="🍀MoeMagicMango💫">
                 <div>
                     <LabelGroup icon={IoLanguage} title="Languages">
                         <LabelItem>汉语</LabelItem>
@@ -41,7 +42,7 @@ const MainContainer = () => {
                     </LabelGroup>
                     <LabelGroup icon={FaCat} title="Status">
                         <LabelItem>"Cat"</LabelItem>
-                        <LabelItem>Magician</LabelItem>
+                        <LabelItem icon={RxMagicWand}>Magician</LabelItem>
                     </LabelGroup>
                 </div>
                 <div>
@@ -66,12 +67,11 @@ const MainContainer = () => {
             <Block>
                 <Column width={"100%"}>
                     <div className={"header-text-render"}>心之所向，素履以往。</div>
-                    <div className={"header-text-render-addby"}>---《尘曲》</div>
                 </Column>
                 <Column>
                     <Description>
                         <h1><FaChevronRight /> awa? </h1>
-                        <Paragraph>设定上是猫娘&魔法师, 不过按照技术栈定义也可以为半个全栈工程师 ()</Paragraph>
+                        <Paragraph>设定上是猫娘&魔法师, 不过按照技术栈定义也可以为半个全栈工程师 (? </Paragraph>
                         <h1> <FaList />  <FaPen /> </h1>
                         <Paragraph>貌似没有什么特别~唯一的爱好可能是<del className="deleted">睡觉💤</del>或者<del className="deleted">划水</del></Paragraph>
                         <Paragraph>大多数时间已经从玩游戏转到做好玩的东西(? 例如是做一些小玩具</Paragraph>
@@ -80,7 +80,6 @@ const MainContainer = () => {
                         <Paragraph>"Keep it Simple,Stupid."</Paragraph>
                         <h1> <FaList /> Plan </h1>
                         <Paragraph>大概学完一部分有兴趣的编程语言，例如 Rust 和 C# </Paragraph>
-                        <Paragraph>目前正参与学校的 CTF 训练，不知道有什么成就呢x </Paragraph>
                         <Paragraph>计划成为一名合格的全栈工程师，能力能被认可。</Paragraph>
                         <Paragraph></Paragraph>
                     </Description>
@@ -88,7 +87,7 @@ const MainContainer = () => {
                 <Column>
                     <AccountList title="Link To My Social Network❤">
                         <Account href="https://github.com/MoYoez" icon={FaGithub} title="GitHub">
-                            KoiParadise
+                            MoeMagicMango
                         </Account>
                         <Account href="https://lemonkoi.one" icon={FaBlog} title="Blog">
                             https://lemonkoi.one
