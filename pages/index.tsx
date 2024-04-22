@@ -6,7 +6,6 @@ import {
     FaSteam,
     FaQq,
     FaTwitter,
-    FaEnvelope,
     FaCat,
     FaWindows,
     FaGit,
@@ -15,7 +14,6 @@ import {
     FaBlog, FaGamepad, FaPen, FaMastodon
 } from 'react-icons/fa'
 import { GrUbuntu } from 'react-icons/gr'
-import { PiShootingStarLight } from "react-icons/pi";
 import { IoBulb, IoLanguage, IoSchool } from 'react-icons/io5'
 import { RxMagicWand } from "react-icons/rx";
 import { Account, AccountList, Description, Paragraph } from '../components/blocks'
@@ -34,6 +32,7 @@ const MainContainer = () => {
                         <LabelItem>汉语</LabelItem>
                         <LabelItem>漢語</LabelItem>
                         <LabelItem>English</LabelItem>
+                        <LabelItem>Japanese</LabelItem>
                     </LabelGroup>
                 </div>
                 <div>
@@ -56,13 +55,6 @@ const MainContainer = () => {
                         <LabelItem>Git</LabelItem>
                     </LabelGroup>
                 </div>
-                <div>
-                    <LabelGroup icon={PiShootingStarLight} title='Current'>
-                        <LabelItem>🍥</LabelItem>
-                        <LabelItem>💫</LabelItem>
-                        <LabelItem>🏳️‍⚧️</LabelItem>
-                    </LabelGroup>
-                </div>
             </Header>
             <Block>
                 <Column width={"100%"}>
@@ -71,17 +63,14 @@ const MainContainer = () => {
                 <Column>
                     <Description>
                         <h1><FaChevronRight /> awa? </h1>
-                        <Paragraph>设定上是猫娘&魔法师, 不过按照技术栈定义也可以为半个全栈工程师 (? </Paragraph>
+                        <Paragraph>qwq? Always Magic Power~ 🌟  ૮ • ﻌ - ა </Paragraph>
                         <h1> <FaList />  <FaPen /> </h1>
-                        <Paragraph>貌似没有什么特别~唯一的爱好可能是<del className="deleted">睡觉💤</del>或者<del className="deleted">划水</del></Paragraph>
-                        <Paragraph>大多数时间已经从玩游戏转到做好玩的东西(? 例如是做一些小玩具</Paragraph>
+                        <Paragraph>貌似没有什么特别~唯一的爱好可能是<del className="deleted">睡觉💤</del>或者<del className="deleted"></del></Paragraph>
+                        <Paragraph>大多数时间已经从玩游戏转到做好玩的东西(? 例如是做一些小玩具 已经变成了长期不理人的形态了.png </Paragraph>
                         <Paragraph>写一些博客内容或者是学习一下新的代码貌似也算不错呢x，或许可以考虑多做点试试(?</Paragraph>
-                        <Paragraph>如果实在没有事情做的话，貌似也可以体验一下运维的快乐，例如维护一些开源项目的发展~</Paragraph>
-                        <Paragraph>"Keep it Simple,Stupid."</Paragraph>
                         <h1> <FaList /> Plan </h1>
-                        <Paragraph>大概学完一部分有兴趣的编程语言，例如 Rust 和 C# </Paragraph>
-                        <Paragraph>计划成为一名合格的全栈工程师，能力能被认可。</Paragraph>
-                        <Paragraph></Paragraph>
+                        <Paragraph>Draw | Cat Caught Something ? </Paragraph>
+                        <Paragraph> ⊂₍ •ᴥ• ₎っ </Paragraph>
                     </Description>
                 </Column>
                 <Column>
@@ -96,7 +85,7 @@ const MainContainer = () => {
                             MoeMagicMango
                         </Account>
                         <Account href="https://wpa.qq.com/msgrd?v=3&uin=1292581422&site=qq&menu=yes" icon={FaQq} title="QQ">
-                            🍀MoeMagicMango🍥💫
+                            🍀MoeMagicMango💫
                         </Account>
                         <Account href="https://twitter.com/lemonflavours" icon={FaTwitter} title="Twitter">
                             @LemonFlavours
@@ -104,27 +93,24 @@ const MainContainer = () => {
                         <Account href='https://msu.a233.shop/web/@moyoez' icon={FaMastodon} title="Mastodon">
                             MoeMagicMango@hello.2heng.xin
                         </Account>
-                        <Account href="mailto:i@himoyo.cn" icon={FaEnvelope} title="mail">
-                            i@himoyo.cn
-                        </Account>
                     </AccountList>
                     <AccountList title="Toys">
                         <Account href="https://github.com/MoYoez/Lucy_ZeroBot" icon={FaGithub} title="Lucy_Zerobot">
-                            HiMoYoBot Lucy
+                            Lucy For Onebot
                         </Account>
-                        <Account href="https://github.com/MoYoez/Text-WaterMark" icon={FaGithub} title="Text_WaterMark">
-                            在文字上实现添加水印
+                        <Account href="https://github.com/MoYoez/lucy_reibot" icon={FaGithub} title="Lucy_Reibot">
+                            Lucy For Telegram (2Paradise)
                         </Account>
-                        <Account href="https://github.com/MoYoez/music-radio" icon={FaGithub} title="music-box">
-                            基于 WebAudio 的简易播放器
+                        <Account href="https://github.com/MoYoez/PhigrosLibrary-FlaskAPI" icon={FaGithub} title="PhigrosLibrary-FlaskAPI">
+                           Phigros 存档逆向接口
                         </Account>
                         <Account href="https://github.com/FloatTech/ZeroBot-Plugin" icon={FaGithub} title="Zerobot-Plugin">
-                            基于ZeroBot的插件
+                            Zerobot 系Bot插件组
                         </Account>
                     </AccountList>
                 </Column>
                 <Column width={"100%"}>
-                    <div className={"least-intro"}> ^^ Always try to be pleasant and not be harsh all the time, perhaps I wanted to meet more people and learn more. (/≧▽≦)/
+                    <div className={"least-intro"}> " 心が向かうところへ、たとえ素足でも進んで行く | Always try to seek for Stellar and Dream 💫"
                     </div>
                 </Column>
             </Block>
@@ -135,9 +121,9 @@ const MainContainer = () => {
                         <h1><span className="icon">
                             <FaChevronRight /> <FaGamepad></FaGamepad> </span></h1>
                         <Paragraph>
-                            大部分是音游哦w 主修 Arcaea + Project Sekai 类移动端音游</Paragraph>
-                        <Paragraph>有可能会在假期看到咱出勤，同时咱也是个maimai + chuni玩家</Paragraph>
-                        <Paragraph>欢迎一起拼机！或者来加咱的Steam也是可的，或许咱可能会跟你一起玩一些联机游戏(*/ω＼*)</Paragraph>
+                            沉迷于炉石传说和一部分音游 (Arcaea + Rotaeno) w</Paragraph>
+                        <Paragraph>有可能会在假期看到咱出勤，大概会在某些地方看到傻傻的咱在打Maimai和中二w </Paragraph>
+                        <Paragraph>抓到咱请手下留情呜呜~ </Paragraph>
                     </Description>
                 </Column>
                 <Column>
@@ -153,13 +139,13 @@ const MainContainer = () => {
             </Block>
 
             <Footer>
-                <script src="https://cdn.himoyo.cn/handsome/js/title_change.js"></script>
-                <FooterParagraph color={"#c39595"} icon={IoBulb}>Copyright © 2021-2023 HiMoYo. | <a className="footer-link" href="https://github.com/amphineko/atomicneko">
+                <FooterParagraph color={"#c39595"} icon={IoBulb}>Copyright © 2021-2024 HiMoYo. | <a className="footer-link" href="https://github.com/amphineko/atomicneko">
                     Fork this template on GitHub
                 </a>
                     <span className="footer-external-link-icon">
                         <FaExternalLinkAlt />
                     </span></FooterParagraph>
+
             </Footer>
 
             <style jsx>{`
@@ -225,7 +211,7 @@ const MainContainer = () => {
             margin: 0 auto;
             min-height: 100vh;
             padding: 1em 0;
-            font-family: "Noto Sans","Noto Sans SC","Microsoft YaHei",serif;
+            font-family: "source-han-sans-simplified-c",serif;
           }
         `}</style>
         </div>
