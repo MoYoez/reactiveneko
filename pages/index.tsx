@@ -211,7 +211,7 @@ const MainContainer = () => {
             margin: 0 auto;
             min-height: 100vh;
             padding: 1em 0;
-            font-family: "source-han-sans-simplified-c",serif;
+            font-family: "Ubuntu","Noto Sans SC","Noto Sans CJK SC",serif;
           }
         `}</style>
         </div>

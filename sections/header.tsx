@@ -1,6 +1,4 @@
 import { PropsWithChildren, ReactNode } from 'react'
-import typekit from '../components/typekit'
-import TypekitLoader from '../components/typekit'
 const HeadPictureOriginal = 'https://gravatar.loli.net/avatar/22b242a28bb848f2629f2a636bba9c03?s=600'
 export const ProfileName = ({ children }: PropsWithChildren) => (
   <div className="profile-name">
@@ -11,7 +9,7 @@ export const ProfileName = ({ children }: PropsWithChildren) => (
                 display: inline-block;
                 font-weight: 600;
                 font-size: 40px;
-                font-family: "source-han-sans-simplified-c","serif";
+                font-family: "Ubuntu","Noto Sans SC","Noto Sans CJK SC","serif";
                 line-height: 1.65em;
                 margin: .30em .5em .25em 0;
                 text-shadow: 2px 2px 4px rgba(0,0,0,.25)
@@ -23,8 +21,8 @@ export const ProfileName = ({ children }: PropsWithChildren) => (
 export const Header = ({ children, profileName }: PropsWithChildren<{ profileName: ReactNode }>) => (
   <header className="row">
     <title>qwq?</title>
-      <TypekitLoader></TypekitLoader>
-    <link rel="dns-prefetch" href="https://base.lemonkoi.one"></link>
+      <link href="https://fonts.googleapis.com/css2?family=Ubuntu&Noto+Sans+SC&display=swap" rel="stylesheet"></link>
+      <link rel="dns-prefetch" href="https://base.lemonkoi.one"></link>
     <div className="column left-side">
       <a className="head-picture-container" href={HeadPictureOriginal}>
         <img alt="user pic" className="head-picture" src={HeadPictureOriginal} />
