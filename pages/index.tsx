@@ -87,8 +87,8 @@ const MainContainer = () => {
                         <Account href="https://wpa.qq.com/msgrd?v=3&uin=1292581422&site=qq&menu=yes" icon={FaQq} title="QQ">
                             🍀MoeMagicMango💫
                         </Account>
-                        <Account href="https://twitter.com/lemonflavours" icon={FaTwitter} title="Twitter">
-                            @LemonFlavours
+                        <Account href="https://twitter.com/pochiuww" icon={FaTwitter} title="Twitter">
+                            @Pochiuww
                         </Account>
                         <Account href='https://msu.a233.shop/web/@moyoez' icon={FaMastodon} title="Mastodon">
                             MoeMagicMango@hello.2heng.xin
