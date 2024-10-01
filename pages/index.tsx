@@ -90,7 +90,7 @@ const MainContainer = () => {
                         <Account href="https://twitter.com/akirasweetz" icon={FaTwitter} title="Twitter">
                             @Pochiuww
                         </Account>
-                        <Account href='https://msu.a233.shop/web/@moyoez' icon={FaMastodon} title="Mastodon">
+                        <Account href='https://hello.2heng.xin/web/@moyoez' icon={FaMastodon} title="Mastodon">
                             MoeMagicMango@hello.2heng.xin
                         </Account>
                     </AccountList>
