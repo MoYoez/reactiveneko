@@ -122,6 +122,7 @@ const MainContainer = () => {
                         <Paragraph>
                             沉迷于炉石传说和一部分音游 (Arcaea + Rotaeno + PJSK? ) w</Paragraph>
                         <Paragraph>变成日系宅宿舍党，不定期出门回去拍风景 | 简单的朋友聚餐 ， 目前挺喜欢拍食物的x (bushi)</Paragraph>
+                        <Paragraph>目前集中于主机平台 (Switch) 和 （Steam） ，倾向于独立小作游戏为主 </Paragraph>
                     </Description>
                 </Column>
                 <Column>
