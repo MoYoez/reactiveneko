@@ -1,5 +1,5 @@
 import { PropsWithChildren, ReactNode } from 'react'
-const HeadPictureOriginal = 'https://gravatar.loli.net/avatar/22b242a28bb848f2629f2a636bba9c03?s=600'
+const HeadPictureOriginal = 'https://lemonkoi.one/_next/image?url=https%3A%2F%2Fgravatar.com%2Favatar%2F24972965681ebfcf8369dcecbc7080fa%3Fsize%3D512&w=384&q=75'
 export const ProfileName = ({ children }: PropsWithChildren) => (
   <div className="profile-name">
     {children}
