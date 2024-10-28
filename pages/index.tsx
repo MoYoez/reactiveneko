@@ -40,7 +40,6 @@ const MainContainer = () => {
                         <LabelItem>Undergraduate</LabelItem>
                     </LabelGroup>
                     <LabelGroup icon={FaCat} title="Status">
-                        <LabelItem>"Cat"</LabelItem>
                         <LabelItem icon={RxMagicWand}>Magician</LabelItem>
                     </LabelGroup>
                 </div>
@@ -88,7 +87,7 @@ const MainContainer = () => {
                             🍀MoeMagicMango💫
                         </Account>
                         <Account href="https://twitter.com/akirasweetz" icon={FaTwitter} title="Twitter">
-                            @Pochiuww
+                            @Akirasweetz
                         </Account>
                         <Account href='https://hello.2heng.xin/web/@moyoez' icon={FaMastodon} title="Mastodon">
                             MoeMagicMango@hello.2heng.xin
@@ -121,9 +120,8 @@ const MainContainer = () => {
                         <h1><span className="icon">
                             <FaChevronRight /> <FaGamepad></FaGamepad> </span></h1>
                         <Paragraph>
-                            沉迷于炉石传说和一部分音游 (Arcaea + Rotaeno) w</Paragraph>
-                        <Paragraph>有可能会在假期看到咱出勤，大概会在某些地方看到傻傻的咱在打Maimai和中二w </Paragraph>
-                        <Paragraph>抓到咱请手下留情呜呜~ </Paragraph>
+                            沉迷于炉石传说和一部分音游 (Arcaea + Rotaeno + PJSK? ) w</Paragraph>
+                        <Paragraph>变成日系宅宿舍党，不定期出门回去拍风景 | 简单的朋友聚餐 ， 目前挺喜欢拍食物的x (bushi)</Paragraph>
                     </Description>
                 </Column>
                 <Column>
